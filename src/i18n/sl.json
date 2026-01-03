@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "PHM — upravljalnik PHP za macOS",
+    "description": "Binarni upravljalnik paketov PHP za macOS. Brez Homebrew. Brez MacPorts. Brez prevajanja."
+  },
+  "hero": {
+    "tagline": "En build. Tisoče namestitev.",
+    "subtitle": "Binarni upravljalnik paketov PHP za macOS.",
+    "subtitleFeatures": "Brez Homebrew. Brez MacPorts. Brez prevajanja.",
+    "getStarted": "Začni",
+    "viewOnGitHub": "Oglej si na GitHubu"
+  },
+  "terminal": {
+    "label": "terminal"
+  },
+  "whatIs": {
+    "title": "Kaj je PHM",
+    "precompiled": {
+      "title": "Predkompiliran PHP",
+      "line1": "Zgrajen enkrat",
+      "line2": "Nameščen takoj"
+    },
+    "macosOnly": {
+      "title": "Samo macOS",
+      "line1": "Zasnovan posebej za macOS",
+      "line2": "Brez večplatformskih kompromisov"
+    },
+    "noBuildTools": {
+      "title": "Brez orodij za build",
+      "line1": "Brez Homebrew",
+      "line2": "Brez MacPorts",
+      "line3": "Brez lokalnega prevajanja"
+    },
+    "deterministic": {
+      "title": "Determinističen in čist",
+      "line1": "Brez konfliktov različic",
+      "line2": "Nativen za vaš Mac",
+      "line3": "Vedno isti rezultat"
+    }
+  },
+  "why": {
+    "title": "Zakaj PHM obstaja",
+    "problemLine1": "Ponovno prevajanje PHP na vsakem prenosniku je postalo normalno.",
+    "problemLine2": "Normalno ne pomeni razumno.",
+    "solutionLine1": "PHM sledi preverjenemu vzorcu Debiana:",
+    "solutionHighlight": "zgradi enkrat, razpošlji binarne pakete, namesti takoj."
+  },
+  "installation": {
+    "title": "Namestitev",
+    "addToProfile": "Nato dodaj v svoj profil lupine:"
+  },
+  "quickStart": {
+    "title": "Hitri začetek",
+    "interactiveMode": "Na voljo je interaktivni način:",
+    "commentInstall": "# Namesti PHP 8.5",
+    "commentSetDefault": "# Nastavi privzeto različico",
+    "commentVerify": "# Preveri"
+  },
+  "features": {
+    "title": "Ključne funkcije",
+    "binaryPackages": "Binarni paketi PHP",
+    "versionScoped": "Razširitve vezane na različico",
+    "fpmManagement": "Upravljanje storitve PHP‑FPM",
+    "extensionToggle": "Vklop / izklop razširitev",
+    "interactiveTui": "Interaktivni TUI čarovnik",
+    "designedFor": "Za MacBook, iMac in Mac mini"
+  },
+  "platform": {
+    "title": "Obseg platforme",
+    "macosOnly": "PHM deluje samo na macOS.",
+    "explanationLine1": "To je zavestna izbira.",
+    "explanationLine2": "Linux že ima odlična PHP skladišča.",
+    "explanationLine3": "PHM zapolni vrzel na macOS."
+  },
+  "footer": {
+    "githubCli": "GitHub (PHM CLI)",
+    "packagesRepo": "Skladišče paketov PHP",
+    "documentation": "Dokumentacija",
+    "quoteLine1": "Moč ne prihaja iz neskončnih ponovnih prevajanj.",
+    "quoteLine2": "Prihaja iz tega, da zgradiš enkrat — in deliš modro."
+  },
+  "actions": {
+    "copy": "Kopiraj",
+    "copied": "Kopirano!"
+  }
+}

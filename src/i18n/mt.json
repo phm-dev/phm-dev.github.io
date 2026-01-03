@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "PHM — Maniġer tal‑PHP għal macOS",
+    "description": "Maniġer binarju tal‑pakketti PHP għal macOS. Bla Homebrew. Bla MacPorts. Bla kompilar."
+  },
+  "hero": {
+    "tagline": "Build wieħed. Eluf ta’ installazzjonijiet.",
+    "subtitle": "Maniġer binarju tal‑pakketti PHP għal macOS.",
+    "subtitleFeatures": "Bla Homebrew. Bla MacPorts. Bla kompilar.",
+    "getStarted": "Ibda",
+    "viewOnGitHub": "Ara fuq GitHub"
+  },
+  "terminal": {
+    "label": "terminal"
+  },
+  "whatIs": {
+    "title": "X’inhu PHM",
+    "precompiled": {
+      "title": "PHP prekompilat",
+      "line1": "Imbena darba",
+      "line2": "Installat mill‑għatba"
+    },
+    "macosOnly": {
+      "title": "macOS biss",
+      "line1": "Iddisinjat apposta għal macOS",
+      "line2": "Bla kompromessi multi‑pjattaforma"
+    },
+    "noBuildTools": {
+      "title": "Bla għodod ta’ build",
+      "line1": "Bla Homebrew",
+      "line2": "Bla MacPorts",
+      "line3": "Bla kompilar lokali"
+    },
+    "deterministic": {
+      "title": "Deterministiku u nadif",
+      "line1": "Bla kunflitti ta’ verżjonijiet",
+      "line2": "Nattiv għall‑Mac tiegħek",
+      "line3": "Dejjem l‑istess riżultat"
+    }
+  },
+  "why": {
+    "title": "Għaliex jeżisti PHM",
+    "problemLine1": "Ir‑rikompilazzjoni tal‑PHP fuq kull laptop saret normali.",
+    "problemLine2": "Normali ma jfissirx għaqli.",
+    "solutionLine1": "PHM isegwi l‑mudell ippruvat ta’ Debian:",
+    "solutionHighlight": "ibni darba, qassam il‑binars, installa mill‑għatba."
+  },
+  "installation": {
+    "title": "Installazzjoni",
+    "addToProfile": "Imbagħad żid mal‑profil tas‑shell tiegħek:"
+  },
+  "quickStart": {
+    "title": "Bidu rapidu",
+    "interactiveMode": "Mod interattiv disponibbli:",
+    "commentInstall": "# Installa PHP 8.5",
+    "commentSetDefault": "# Issettja l‑verżjoni default",
+    "commentVerify": "# Ivverifika"
+  },
+  "features": {
+    "title": "Karatteristiċi ewlenin",
+    "binaryPackages": "Pakketti PHP binarji",
+    "versionScoped": "Estensjonijiet marbuta mal‑verżjoni",
+    "fpmManagement": "Ġestjoni tas‑servizz PHP‑FPM",
+    "extensionToggle": "Attiva / iddiżattiva l‑estensjonijiet",
+    "interactiveTui": "Gwida TUI interattiva",
+    "designedFor": "Għal MacBook, iMac u Mac mini"
+  },
+  "platform": {
+    "title": "Ambitu tal‑pjattaforma",
+    "macosOnly": "PHM jaħdem biss fuq macOS.",
+    "explanationLine1": "Din hija għażla intenzjonata.",
+    "explanationLine2": "Linux diġà għandu repożitorji PHP eċċellenti.",
+    "explanationLine3": "PHM jimla l‑vojt fuq macOS."
+  },
+  "footer": {
+    "githubCli": "GitHub (PHM CLI)",
+    "packagesRepo": "Repożitorju ta’ pakketti PHP",
+    "documentation": "Dokumentazzjoni",
+    "quoteLine1": "Il‑qawwa ma tiġix minn rikompilazzjonijiet bla tmiem.",
+    "quoteLine2": "Tiġi minn meta tibni darba — u taqsam bil‑għaqal."
+  },
+  "actions": {
+    "copy": "Ikkopja",
+    "copied": "Ikkopjat!"
+  }
+}

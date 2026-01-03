@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "PHM — Manager PHP pentru macOS",
+    "description": "Un manager binar de pachete PHP pentru macOS. Fără Homebrew. Fără MacPorts. Fără compilare."
+  },
+  "hero": {
+    "tagline": "O compilare. Mii de instalări.",
+    "subtitle": "Un manager binar de pachete PHP pentru macOS.",
+    "subtitleFeatures": "Fără Homebrew. Fără MacPorts. Fără compilare.",
+    "getStarted": "Începe",
+    "viewOnGitHub": "Vezi pe GitHub"
+  },
+  "terminal": {
+    "label": "terminal"
+  },
+  "whatIs": {
+    "title": "Ce este PHM",
+    "precompiled": {
+      "title": "PHP precompilat",
+      "line1": "Compilat o singură dată",
+      "line2": "Instalat instant"
+    },
+    "macosOnly": {
+      "title": "Doar macOS",
+      "line1": "Proiectat special pentru macOS",
+      "line2": "Fără compromisuri multi‑platformă"
+    },
+    "noBuildTools": {
+      "title": "Fără unelte de build",
+      "line1": "Fără Homebrew",
+      "line2": "Fără MacPorts",
+      "line3": "Fără compilare locală"
+    },
+    "deterministic": {
+      "title": "Determinist și curat",
+      "line1": "Fără conflicte de versiune",
+      "line2": "Nativ pentru Mac‑ul tău",
+      "line3": "Mereu același rezultat"
+    }
+  },
+  "why": {
+    "title": "De ce există PHM",
+    "problemLine1": "Recompilarea PHP pe fiecare laptop a devenit normală.",
+    "problemLine2": "Normal nu înseamnă rațional.",
+    "solutionLine1": "PHM urmează modelul dovedit Debian:",
+    "solutionHighlight": "compilezi o dată, distribui binarele, instalezi instant."
+  },
+  "installation": {
+    "title": "Instalare",
+    "addToProfile": "Apoi adaugă în profilul tău de shell:"
+  },
+  "quickStart": {
+    "title": "Pornire rapidă",
+    "interactiveMode": "Mod interactiv disponibil:",
+    "commentInstall": "# Instalează PHP 8.5",
+    "commentSetDefault": "# Setează versiunea implicită",
+    "commentVerify": "# Verifică"
+  },
+  "features": {
+    "title": "Funcții cheie",
+    "binaryPackages": "Pachete PHP binare",
+    "versionScoped": "Extensii asociate versiunii",
+    "fpmManagement": "Administrarea serviciului PHP‑FPM",
+    "extensionToggle": "Activare / dezactivare extensii",
+    "interactiveTui": "Asistent TUI interactiv",
+    "designedFor": "Pentru MacBook, iMac și Mac mini"
+  },
+  "platform": {
+    "title": "Domeniul platformei",
+    "macosOnly": "PHM rulează doar pe macOS.",
+    "explanationLine1": "Este o alegere deliberată.",
+    "explanationLine2": "Linux are deja depozite PHP excelente.",
+    "explanationLine3": "PHM acoperă golul pe macOS."
+  },
+  "footer": {
+    "githubCli": "GitHub (PHM CLI)",
+    "packagesRepo": "Depozit de pachete PHP",
+    "documentation": "Documentație",
+    "quoteLine1": "Puterea nu vine din recompilări fără sfârșit.",
+    "quoteLine2": "Vine din a construi o dată — și a împărtăși cu înțelepciune."
+  },
+  "actions": {
+    "copy": "Copiază",
+    "copied": "Copiat!"
+  }
+}

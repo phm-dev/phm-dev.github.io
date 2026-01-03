@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "PHM — Bainisteoir PHP do macOS",
+    "description": "Bainisteoir pacáistí PHP dénártha do macOS. Gan Homebrew. Gan MacPorts. Gan tiomsú."
+  },
+  "hero": {
+    "tagline": "Tógáil amháin. Mílte suiteálacha.",
+    "subtitle": "Bainisteoir pacáistí PHP dénártha do macOS.",
+    "subtitleFeatures": "Gan Homebrew. Gan MacPorts. Gan tiomsú.",
+    "getStarted": "Tosaigh",
+    "viewOnGitHub": "Féach ar GitHub"
+  },
+  "terminal": {
+    "label": "terminal"
+  },
+  "whatIs": {
+    "title": "Cad é PHM",
+    "precompiled": {
+      "title": "PHP réamh‑thiomsaithe",
+      "line1": "Tógtha uair amháin",
+      "line2": "Suiteáilte láithreach"
+    },
+    "macosOnly": {
+      "title": "macOS amháin",
+      "line1": "Deartha go sonrach do macOS",
+      "line2": "Gan chomhréitigh il‑ardán"
+    },
+    "noBuildTools": {
+      "title": "Gan uirlisí build",
+      "line1": "Gan Homebrew",
+      "line2": "Gan MacPorts",
+      "line3": "Gan tiomsú áitiúil"
+    },
+    "deterministic": {
+      "title": "Cinnte agus glan",
+      "line1": "Gan choimhlintí leaganacha",
+      "line2": "Dúchasach do do Mac",
+      "line3": "I gcónaí an toradh céanna"
+    }
+  },
+  "why": {
+    "title": "Cén fáth a bhfuil PHM ann",
+    "problemLine1": "D’éirigh ath‑thiomsú PHP ar gach ríomhaire glúine ina ghnáthrud.",
+    "problemLine2": "Ní chiallaíonn gnáth go bhfuil sé ciallmhar.",
+    "solutionLine1": "Leanann PHM patrún cruthaithe Debian:",
+    "solutionHighlight": "tóg uair amháin, dáileadh na bináirí, suiteáil láithreach."
+  },
+  "installation": {
+    "title": "Suiteáil",
+    "addToProfile": "Ansin cuir le do phróifíl shell:"
+  },
+  "quickStart": {
+    "title": "Tosú tapa",
+    "interactiveMode": "Modh idirghníomhach ar fáil:",
+    "commentInstall": "# Suiteáil PHP 8.5",
+    "commentSetDefault": "# Socraigh an leagan réamhshocraithe",
+    "commentVerify": "# Fíoraigh"
+  },
+  "features": {
+    "title": "Príomhghnéithe",
+    "binaryPackages": "Pacáistí PHP dénártha",
+    "versionScoped": "Breiseáin ceangailte leis an leagan",
+    "fpmManagement": "Bainistíocht seirbhíse PHP‑FPM",
+    "extensionToggle": "Cumasaigh / díchumasaigh breiseáin",
+    "interactiveTui": "Treoraí TUI idirghníomhach",
+    "designedFor": "Do MacBook, iMac agus Mac mini"
+  },
+  "platform": {
+    "title": "Raon ardáin",
+    "macosOnly": "Ní ritheann PHM ach ar macOS.",
+    "explanationLine1": "Is rogha d’aon ghnó é seo.",
+    "explanationLine2": "Tá stórtha PHP den scoth ag Linux cheana féin.",
+    "explanationLine3": "Líonann PHM an bhearna ar macOS."
+  },
+  "footer": {
+    "githubCli": "GitHub (PHM CLI)",
+    "packagesRepo": "Stór pacáistí PHP",
+    "documentation": "Doiciméadú",
+    "quoteLine1": "Ní thagann cumhacht ó ath‑thiomsú gan deireadh.",
+    "quoteLine2": "Tagann sí ó thógáil uair amháin — agus ó chomhroinnt go ciallmhar."
+  },
+  "actions": {
+    "copy": "Cóipeáil",
+    "copied": "Cóipeáilte!"
+  }
+}

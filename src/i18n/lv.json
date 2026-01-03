@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "PHM — PHP pārvaldnieks macOS",
+    "description": "Binārs PHP pakotņu pārvaldnieks macOS. Bez Homebrew. Bez MacPorts. Bez kompilēšanas."
+  },
+  "hero": {
+    "tagline": "Viena būve. Tūkstošiem instalāciju.",
+    "subtitle": "Binārs PHP pakotņu pārvaldnieks macOS.",
+    "subtitleFeatures": "Bez Homebrew. Bez MacPorts. Bez kompilēšanas.",
+    "getStarted": "Sākt",
+    "viewOnGitHub": "Skatīt GitHub"
+  },
+  "terminal": {
+    "label": "terminal"
+  },
+  "whatIs": {
+    "title": "Kas ir PHM",
+    "precompiled": {
+      "title": "Iepriekš kompilēts PHP",
+      "line1": "Sakompilēts vienu reizi",
+      "line2": "Uzstādīts uzreiz"
+    },
+    "macosOnly": {
+      "title": "Tikai macOS",
+      "line1": "Izstrādāts īpaši macOS",
+      "line2": "Bez daudzplatformu kompromisiem"
+    },
+    "noBuildTools": {
+      "title": "Bez būvēšanas rīkiem",
+      "line1": "Bez Homebrew",
+      "line2": "Bez MacPorts",
+      "line3": "Bez vietējas kompilēšanas"
+    },
+    "deterministic": {
+      "title": "Deterministisks un tīrs",
+      "line1": "Bez versiju konfliktiem",
+      "line2": "Nativs jūsu Mac",
+      "line3": "Vienmēr tas pats rezultāts"
+    }
+  },
+  "why": {
+    "title": "Kāpēc PHM pastāv",
+    "problemLine1": "PHP pārkompilēšana uz katra klēpjdatora kļuva par normu.",
+    "problemLine2": "Normāli nenozīmē saprātīgi.",
+    "solutionLine1": "PHM seko pārbaudītajam Debian paraugam:",
+    "solutionHighlight": "būvē vienreiz, izplati bināros, instalē uzreiz."
+  },
+  "installation": {
+    "title": "Instalēšana",
+    "addToProfile": "Pēc tam pievieno savam shell profilam:"
+  },
+  "quickStart": {
+    "title": "Ātrais starts",
+    "interactiveMode": "Pieejams interaktīvais režīms:",
+    "commentInstall": "# Instalēt PHP 8.5",
+    "commentSetDefault": "# Iestatīt noklusējuma versiju",
+    "commentVerify": "# Pārbaudīt"
+  },
+  "features": {
+    "title": "Galvenās funkcijas",
+    "binaryPackages": "Binārās PHP pakotnes",
+    "versionScoped": "Ar versiju saistīti paplašinājumi",
+    "fpmManagement": "PHP‑FPM servisa pārvaldība",
+    "extensionToggle": "Paplašinājumu ieslēgšana / izslēgšana",
+    "interactiveTui": "Interaktīvs TUI vednis",
+    "designedFor": "MacBook, iMac un Mac mini"
+  },
+  "platform": {
+    "title": "Platformas tvērums",
+    "macosOnly": "PHM darbojas tikai macOS.",
+    "explanationLine1": "Tā ir apzināta izvēle.",
+    "explanationLine2": "Linux jau ir lieliski PHP repozitoriji.",
+    "explanationLine3": "PHM aizpilda macOS plaisu."
+  },
+  "footer": {
+    "githubCli": "GitHub (PHM CLI)",
+    "packagesRepo": "PHP pakotņu repozitorijs",
+    "documentation": "Dokumentācija",
+    "quoteLine1": "Spēks nerodas no bezgalīgas pārkompilēšanas.",
+    "quoteLine2": "Tas rodas, būvējot vienreiz — un daloties gudri."
+  },
+  "actions": {
+    "copy": "Kopēt",
+    "copied": "Nokopēts!"
+  }
+}

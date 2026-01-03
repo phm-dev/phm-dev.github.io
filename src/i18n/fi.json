@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "PHM — PHP‑hallinta macOS:lle",
+    "description": "Binäärinen PHP‑paketinhallinta macOS:lle. Ei Homebrew’tä. Ei MacPortsia. Ei käännöstä."
+  },
+  "hero": {
+    "tagline": "Yksi build. Tuhansia asennuksia.",
+    "subtitle": "Binäärinen PHP‑paketinhallinta macOS:lle.",
+    "subtitleFeatures": "Ei Homebrew’tä. Ei MacPortsia. Ei käännöstä.",
+    "getStarted": "Aloita",
+    "viewOnGitHub": "Katso GitHubissa"
+  },
+  "terminal": {
+    "label": "terminal"
+  },
+  "whatIs": {
+    "title": "Mikä on PHM",
+    "precompiled": {
+      "title": "Esikäännetty PHP",
+      "line1": "Rakennettu kerran",
+      "line2": "Asennettu heti"
+    },
+    "macosOnly": {
+      "title": "Vain macOS",
+      "line1": "Suunniteltu erityisesti macOS:lle",
+      "line2": "Ei monialustaisia kompromisseja"
+    },
+    "noBuildTools": {
+      "title": "Ei build‑työkaluja",
+      "line1": "Ei Homebrew’tä",
+      "line2": "Ei MacPortsia",
+      "line3": "Ei paikallista käännöstä"
+    },
+    "deterministic": {
+      "title": "Deterministinen ja puhdas",
+      "line1": "Ei versioristiriitoja",
+      "line2": "Natiivi Macillesi",
+      "line3": "Aina sama tulos"
+    }
+  },
+  "why": {
+    "title": "Miksi PHM on olemassa",
+    "problemLine1": "PHP:n uudelleenkääntäminen jokaisella läppärillä muuttui normaaliksi.",
+    "problemLine2": "Normaali ei tarkoita järkevää.",
+    "solutionLine1": "PHM noudattaa hyväksi todettua Debian‑mallia:",
+    "solutionHighlight": "rakenna kerran, jaa binäärit, asenna heti."
+  },
+  "installation": {
+    "title": "Asennus",
+    "addToProfile": "Lisää sitten shell‑profiiliisi:"
+  },
+  "quickStart": {
+    "title": "Pika‑aloitus",
+    "interactiveMode": "Interaktiivinen tila saatavilla:",
+    "commentInstall": "# Asenna PHP 8.5",
+    "commentSetDefault": "# Aseta oletusversio",
+    "commentVerify": "# Varmista"
+  },
+  "features": {
+    "title": "Avainominaisuudet",
+    "binaryPackages": "Binääriset PHP‑paketit",
+    "versionScoped": "Versioon sidotut laajennukset",
+    "fpmManagement": "PHP‑FPM‑palvelun hallinta",
+    "extensionToggle": "Laajennusten käyttöön / pois",
+    "interactiveTui": "Interaktiivinen TUI‑opas",
+    "designedFor": "MacBookille, iMacille ja Mac minille"
+  },
+  "platform": {
+    "title": "Alustarajaus",
+    "macosOnly": "PHM toimii vain macOS:llä.",
+    "explanationLine1": "Se on tietoinen valinta.",
+    "explanationLine2": "Linuxilla on jo erinomaiset PHP‑varastot.",
+    "explanationLine3": "PHM täyttää macOS‑aukkoa."
+  },
+  "footer": {
+    "githubCli": "GitHub (PHM CLI)",
+    "packagesRepo": "PHP‑pakettivarasto",
+    "documentation": "Dokumentaatio",
+    "quoteLine1": "Voima ei synny loputtomasta uudelleenkääntämisestä.",
+    "quoteLine2": "Se syntyy siitä, että rakennat kerran — ja jaat viisaasti."
+  },
+  "actions": {
+    "copy": "Kopioi",
+    "copied": "Kopioitu!"
+  }
+}

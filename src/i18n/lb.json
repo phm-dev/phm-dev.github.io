@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "PHM — PHP‑Manager fir macOS",
+    "description": "En binäre PHP‑Paketmanager fir macOS. Kee Homebrew. Kee MacPorts. Keng Kompilatioun."
+  },
+  "hero": {
+    "tagline": "Een Build. Dausende Installatiounen.",
+    "subtitle": "En binäre PHP‑Paketmanager fir macOS.",
+    "subtitleFeatures": "Kee Homebrew. Kee MacPorts. Keng Kompilatioun.",
+    "getStarted": "Ufaangen",
+    "viewOnGitHub": "Op GitHub ukucken"
+  },
+  "terminal": {
+    "label": "terminal"
+  },
+  "whatIs": {
+    "title": "Wat ass PHM",
+    "precompiled": {
+      "title": "Virkompiléiert PHP",
+      "line1": "Ee mol gebaut",
+      "line2": "Direkt installéiert"
+    },
+    "macosOnly": {
+      "title": "Nëmme macOS",
+      "line1": "Speziell fir macOS entwéckelt",
+      "line2": "Keng Plattform‑Kompromësser"
+    },
+    "noBuildTools": {
+      "title": "Keng Build‑Tools",
+      "line1": "Kee Homebrew",
+      "line2": "Kee MacPorts",
+      "line3": "Keng lokal Kompilatioun"
+    },
+    "deterministic": {
+      "title": "Deterministesch a propper",
+      "line1": "Keng Versiounskonflikter",
+      "line2": "Nativ fir däi Mac",
+      "line3": "Ëmmer datselwecht Resultat"
+    }
+  },
+  "why": {
+    "title": "Firwat et PHM gëtt",
+    "problemLine1": "PHP op all Laptop nei ze kompiléieren ass normal ginn.",
+    "problemLine2": "Normal heescht net vernënfteg.",
+    "solutionLine1": "PHM follegt dem bewäerte Debian‑Muster:",
+    "solutionHighlight": "eemol bauen, Binärpakete verdeelen, direkt installéieren."
+  },
+  "installation": {
+    "title": "Installatioun",
+    "addToProfile": "Füügt duerno an däi Shell‑Profil derbäi:"
+  },
+  "quickStart": {
+    "title": "Schnell Start",
+    "interactiveMode": "Interaktive Modus verfügbar:",
+    "commentInstall": "# PHP 8.5 installéieren",
+    "commentSetDefault": "# Standardversioun astellen",
+    "commentVerify": "# Iwwerpréiwen"
+  },
+  "features": {
+    "title": "Haaptfunktiounen",
+    "binaryPackages": "Binär PHP‑Paketen",
+    "versionScoped": "Versiounsbasiert Erweiderungen",
+    "fpmManagement": "Gestioun vum PHP‑FPM‑Service",
+    "extensionToggle": "Erweiderungen aktivéieren / deaktivéieren",
+    "interactiveTui": "Interaktive TUI‑Wizard",
+    "designedFor": "Fir MacBook, iMac an Mac mini"
+  },
+  "platform": {
+    "title": "Plattform‑Ëmfang",
+    "macosOnly": "PHM leeft nëmmen op macOS.",
+    "explanationLine1": "Dat ass eng bewosst Entscheedung.",
+    "explanationLine2": "Linux huet scho exzellent PHP‑Repositories.",
+    "explanationLine3": "PHM fëllt d’Lück op macOS."
+  },
+  "footer": {
+    "githubCli": "GitHub (PHM CLI)",
+    "packagesRepo": "PHP‑Paketen‑Repository",
+    "documentation": "Dokumentatioun",
+    "quoteLine1": "Kraaft kënnt net vun onendleche Neukompilatiounen.",
+    "quoteLine2": "Si kënnt dovun, eemol ze bauen — an weis ze deelen."
+  },
+  "actions": {
+    "copy": "Kopéieren",
+    "copied": "Kopéiert!"
+  }
+}

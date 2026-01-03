@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "PHM — PHP‑hanterare för macOS",
+    "description": "En binär PHP‑pakethanterare för macOS. Ingen Homebrew. Ingen MacPorts. Ingen kompilering."
+  },
+  "hero": {
+    "tagline": "En byggning. Tusentals installationer.",
+    "subtitle": "En binär PHP‑pakethanterare för macOS.",
+    "subtitleFeatures": "Ingen Homebrew. Ingen MacPorts. Ingen kompilering.",
+    "getStarted": "Kom igång",
+    "viewOnGitHub": "Visa på GitHub"
+  },
+  "terminal": {
+    "label": "terminal"
+  },
+  "whatIs": {
+    "title": "Vad är PHM",
+    "precompiled": {
+      "title": "Förkompilerad PHP",
+      "line1": "Byggd en gång",
+      "line2": "Installerad direkt"
+    },
+    "macosOnly": {
+      "title": "Endast macOS",
+      "line1": "Utformad särskilt för macOS",
+      "line2": "Inga plattforms‑kompromisser"
+    },
+    "noBuildTools": {
+      "title": "Inga build‑verktyg",
+      "line1": "Ingen Homebrew",
+      "line2": "Ingen MacPorts",
+      "line3": "Ingen lokal kompilering"
+    },
+    "deterministic": {
+      "title": "Deterministisk och ren",
+      "line1": "Inga versionskonflikter",
+      "line2": "Inbyggd för din Mac",
+      "line3": "Alltid samma resultat"
+    }
+  },
+  "why": {
+    "title": "Varför PHM finns",
+    "problemLine1": "Att kompilera om PHP på varje laptop blev normalt.",
+    "problemLine2": "Normalt betyder inte rimligt.",
+    "solutionLine1": "PHM följer det beprövade Debian‑mönstret:",
+    "solutionHighlight": "bygg en gång, distribuera binärer, installera direkt."
+  },
+  "installation": {
+    "title": "Installation",
+    "addToProfile": "Lägg sedan till i din shell‑profil:"
+  },
+  "quickStart": {
+    "title": "Snabbstart",
+    "interactiveMode": "Interaktivt läge tillgängligt:",
+    "commentInstall": "# Installera PHP 8.5",
+    "commentSetDefault": "# Ställ in standardversion",
+    "commentVerify": "# Verifiera"
+  },
+  "features": {
+    "title": "Nyckelfunktioner",
+    "binaryPackages": "Binära PHP‑paket",
+    "versionScoped": "Versionsbundna tillägg",
+    "fpmManagement": "Hantering av PHP‑FPM‑tjänsten",
+    "extensionToggle": "Aktivera / inaktivera tillägg",
+    "interactiveTui": "Interaktiv TUI‑guide",
+    "designedFor": "För MacBook, iMac och Mac mini"
+  },
+  "platform": {
+    "title": "Plattformsomfång",
+    "macosOnly": "PHM körs endast på macOS.",
+    "explanationLine1": "Det är ett medvetet val.",
+    "explanationLine2": "Linux har redan utmärkta PHP‑förråd.",
+    "explanationLine3": "PHM fyller gapet på macOS."
+  },
+  "footer": {
+    "githubCli": "GitHub (PHM CLI)",
+    "packagesRepo": "PHP‑paketförråd",
+    "documentation": "Dokumentation",
+    "quoteLine1": "Kraft kommer inte från oändliga omkompileringar.",
+    "quoteLine2": "Den kommer från att bygga en gång — och dela klokt."
+  },
+  "actions": {
+    "copy": "Kopiera",
+    "copied": "Kopierad!"
+  }
+}

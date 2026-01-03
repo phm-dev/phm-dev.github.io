@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "PHM — Správca PHP pre macOS",
+    "description": "Binárny správca balíkov PHP pre macOS. Bez Homebrew. Bez MacPorts. Bez kompilácie."
+  },
+  "hero": {
+    "tagline": "Jeden build. Tisíce inštalácií.",
+    "subtitle": "Binárny správca balíkov PHP pre macOS.",
+    "subtitleFeatures": "Bez Homebrew. Bez MacPorts. Bez kompilácie.",
+    "getStarted": "Začať",
+    "viewOnGitHub": "Zobraziť na GitHub"
+  },
+  "terminal": {
+    "label": "terminal"
+  },
+  "whatIs": {
+    "title": "Čo je PHM",
+    "precompiled": {
+      "title": "Predkompilované PHP",
+      "line1": "Zostavené raz",
+      "line2": "Nainštalované okamžite"
+    },
+    "macosOnly": {
+      "title": "Iba macOS",
+      "line1": "Navrhnuté špeciálne pre macOS",
+      "line2": "Bez multiplatformových kompromisov"
+    },
+    "noBuildTools": {
+      "title": "Bez build nástrojov",
+      "line1": "Bez Homebrew",
+      "line2": "Bez MacPorts",
+      "line3": "Bez lokálnej kompilácie"
+    },
+    "deterministic": {
+      "title": "Deterministické a čisté",
+      "line1": "Bez konfliktov verzií",
+      "line2": "Natívne pre váš Mac",
+      "line3": "Vždy rovnaký výsledok"
+    }
+  },
+  "why": {
+    "title": "Prečo PHM existuje",
+    "problemLine1": "Rekompilácia PHP na každom notebooku sa stala normou.",
+    "problemLine2": "Normálne neznamená rozumné.",
+    "solutionLine1": "PHM sa riadi osvedčeným vzorom Debianu:",
+    "solutionHighlight": "zostav raz, distribuuj binárky, nainštaluj okamžite."
+  },
+  "installation": {
+    "title": "Inštalácia",
+    "addToProfile": "Potom pridajte do svojho profilu shellu:"
+  },
+  "quickStart": {
+    "title": "Rýchly štart",
+    "interactiveMode": "Interaktívny režim k dispozícii:",
+    "commentInstall": "# Nainštalovať PHP 8.5",
+    "commentSetDefault": "# Nastaviť predvolenú verziu",
+    "commentVerify": "# Overiť"
+  },
+  "features": {
+    "title": "Kľúčové funkcie",
+    "binaryPackages": "Binárne PHP balíky",
+    "versionScoped": "Rozšírenia viazané na verziu",
+    "fpmManagement": "Správa služby PHP‑FPM",
+    "extensionToggle": "Zapnúť / vypnúť rozšírenia",
+    "interactiveTui": "Interaktívny TUI sprievodca",
+    "designedFor": "Pre MacBook, iMac a Mac mini"
+  },
+  "platform": {
+    "title": "Rozsah platformy",
+    "macosOnly": "PHM funguje iba na macOS.",
+    "explanationLine1": "Je to vedomá voľba.",
+    "explanationLine2": "Linux už má vynikajúce PHP repozitáre.",
+    "explanationLine3": "PHM vypĺňa medzeru na macOS."
+  },
+  "footer": {
+    "githubCli": "GitHub (PHM CLI)",
+    "packagesRepo": "Repozitár PHP balíkov",
+    "documentation": "Dokumentácia",
+    "quoteLine1": "Sila neprichádza z nekonečných rekompilácií.",
+    "quoteLine2": "Prichádza z toho, že postavíš raz — a múdro zdieľaš."
+  },
+  "actions": {
+    "copy": "Kopírovať",
+    "copied": "Skopírované!"
+  }
+}

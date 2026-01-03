@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "PHM — Menedżer PHP dla macOS",
+    "description": "Binarny menedżer pakietów PHP dla macOS. Bez Homebrew. Bez MacPorts. Bez kompilacji."
+  },
+  "hero": {
+    "tagline": "Jeden build. Tysiące instalacji.",
+    "subtitle": "Binarny menedżer pakietów PHP dla macOS.",
+    "subtitleFeatures": "Bez Homebrew. Bez MacPorts. Bez kompilacji.",
+    "getStarted": "Rozpocznij",
+    "viewOnGitHub": "Zobacz na GitHub"
+  },
+  "terminal": {
+    "label": "terminal"
+  },
+  "whatIs": {
+    "title": "Czym jest PHM",
+    "precompiled": {
+      "title": "Prekompilowane PHP",
+      "line1": "Zbudowane raz",
+      "line2": "Instalowane natychmiast"
+    },
+    "macosOnly": {
+      "title": "Tylko macOS",
+      "line1": "Zaprojektowane specjalnie dla macOS",
+      "line2": "Bez kompromisów wieloplatformowych"
+    },
+    "noBuildTools": {
+      "title": "Bez narzędzi budowania",
+      "line1": "Bez Homebrew",
+      "line2": "Bez MacPorts",
+      "line3": "Bez lokalnej kompilacji"
+    },
+    "deterministic": {
+      "title": "Deterministyczne i czyste",
+      "line1": "Bez konfliktów wersji",
+      "line2": "Natywne dla Twojego Maca",
+      "line3": "Zawsze ten sam wynik"
+    }
+  },
+  "why": {
+    "title": "Dlaczego PHM istnieje",
+    "problemLine1": "Rekompilacja PHP na każdym laptopie stała się normą.",
+    "problemLine2": "Normalne nie znaczy rozsądne.",
+    "solutionLine1": "PHM podąża za sprawdzonym wzorcem Debiana:",
+    "solutionHighlight": "zbuduj raz, dystrybuuj binaria, instaluj natychmiast."
+  },
+  "installation": {
+    "title": "Instalacja",
+    "addToProfile": "Następnie dodaj do profilu powłoki:"
+  },
+  "quickStart": {
+    "title": "Szybki start",
+    "interactiveMode": "Dostępny tryb interaktywny:",
+    "commentInstall": "# Zainstaluj PHP 8.5",
+    "commentSetDefault": "# Ustaw domyślną wersję",
+    "commentVerify": "# Zweryfikuj"
+  },
+  "features": {
+    "title": "Kluczowe funkcje",
+    "binaryPackages": "Binarne pakiety PHP",
+    "versionScoped": "Rozszerzenia powiązane z wersją",
+    "fpmManagement": "Zarządzanie usługą PHP-FPM",
+    "extensionToggle": "Włączanie / wyłączanie rozszerzeń",
+    "interactiveTui": "Interaktywny kreator TUI",
+    "designedFor": "Dla MacBooków, iMaców i Mac mini"
+  },
+  "platform": {
+    "title": "Zakres platformy",
+    "macosOnly": "PHM działa tylko na macOS.",
+    "explanationLine1": "To świadomy wybór.",
+    "explanationLine2": "Linux ma już doskonałe repozytoria PHP.",
+    "explanationLine3": "PHM wypełnia lukę na macOS."
+  },
+  "footer": {
+    "githubCli": "GitHub (PHM CLI)",
+    "packagesRepo": "Repozytorium pakietów PHP",
+    "documentation": "Dokumentacja",
+    "quoteLine1": "Siła nie pochodzi z niekończącej się rekompilacji.",
+    "quoteLine2": "Pochodzi z budowania raz — i mądrego dzielenia się."
+  },
+  "actions": {
+    "copy": "Kopiuj",
+    "copied": "Skopiowano!"
+  }
+}

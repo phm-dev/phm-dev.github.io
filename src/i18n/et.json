@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "PHM — PHP haldur macOS‑ile",
+    "description": "Binaarne PHP pakihaldur macOS‑ile. Ilma Homebrew’ta. Ilma MacPortsi. Ilma kompileerimiseta."
+  },
+  "hero": {
+    "tagline": "Üks build. Tuhanded installid.",
+    "subtitle": "Binaarne PHP pakihaldur macOS‑ile.",
+    "subtitleFeatures": "Ilma Homebrew’ta. Ilma MacPortsi. Ilma kompileerimiseta.",
+    "getStarted": "Alusta",
+    "viewOnGitHub": "Vaata GitHubis"
+  },
+  "terminal": {
+    "label": "terminal"
+  },
+  "whatIs": {
+    "title": "Mis on PHM",
+    "precompiled": {
+      "title": "Eelkompileeritud PHP",
+      "line1": "Ehitatud üks kord",
+      "line2": "Paigaldatud kohe"
+    },
+    "macosOnly": {
+      "title": "Ainult macOS",
+      "line1": "Loodud spetsiaalselt macOS‑ile",
+      "line2": "Ilma platvormideüleste kompromissideta"
+    },
+    "noBuildTools": {
+      "title": "Ilma build‑tööriistadeta",
+      "line1": "Ilma Homebrew’ta",
+      "line2": "Ilma MacPortsi",
+      "line3": "Ilma kohaliku kompileerimiseta"
+    },
+    "deterministic": {
+      "title": "Deterministlik ja puhas",
+      "line1": "Ilma versioonikonfliktideta",
+      "line2": "Natiivne sinu Macile",
+      "line3": "Alati sama tulemus"
+    }
+  },
+  "why": {
+    "title": "Miks PHM eksisteerib",
+    "problemLine1": "PHP ümberkompileerimine igal sülearvutil muutus tavaliseks.",
+    "problemLine2": "Tavaline ei tähenda mõistlikku.",
+    "solutionLine1": "PHM järgib tõestatud Debiani mustrit:",
+    "solutionHighlight": "ehita üks kord, jaga binaare, paigalda kohe."
+  },
+  "installation": {
+    "title": "Paigaldus",
+    "addToProfile": "Seejärel lisa oma shell‑profiili:"
+  },
+  "quickStart": {
+    "title": "Kiirstart",
+    "interactiveMode": "Interaktiivne režiim saadaval:",
+    "commentInstall": "# Paigalda PHP 8.5",
+    "commentSetDefault": "# Määra vaikimisi versioon",
+    "commentVerify": "# Kontrolli"
+  },
+  "features": {
+    "title": "Põhifunktsioonid",
+    "binaryPackages": "Binaarsed PHP paketid",
+    "versionScoped": "Versiooniga seotud laiendused",
+    "fpmManagement": "PHP‑FPM teenuse haldus",
+    "extensionToggle": "Laienduste lubamine / keelamine",
+    "interactiveTui": "Interaktiivne TUI‑viisard",
+    "designedFor": "MacBookile, iMacile ja Mac minile"
+  },
+  "platform": {
+    "title": "Platvormi ulatus",
+    "macosOnly": "PHM töötab ainult macOS‑il.",
+    "explanationLine1": "See on teadlik valik.",
+    "explanationLine2": "Linuxil on juba suurepärased PHP‑hoidlad.",
+    "explanationLine3": "PHM täidab macOS‑i lünga."
+  },
+  "footer": {
+    "githubCli": "GitHub (PHM CLI)",
+    "packagesRepo": "PHP pakettide hoidla",
+    "documentation": "Dokumentatsioon",
+    "quoteLine1": "Võim ei tule lõputust ümberkompileerimisest.",
+    "quoteLine2": "See tuleb sellest, et ehitad üks kord — ja jagad targalt."
+  },
+  "actions": {
+    "copy": "Kopeeri",
+    "copied": "Kopeeritud!"
+  }
+}

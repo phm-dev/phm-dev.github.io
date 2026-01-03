@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "PHM — Διαχειριστής PHP για macOS",
+    "description": "Ένας δυαδικός διαχειριστής πακέτων PHP για macOS. Χωρίς Homebrew. Χωρίς MacPorts. Χωρίς μεταγλώττιση."
+  },
+  "hero": {
+    "tagline": "Μία μεταγλώττιση. Χιλιάδες εγκαταστάσεις.",
+    "subtitle": "Ένας δυαδικός διαχειριστής πακέτων PHP για macOS.",
+    "subtitleFeatures": "Χωρίς Homebrew. Χωρίς MacPorts. Χωρίς μεταγλώττιση.",
+    "getStarted": "Ξεκινήστε",
+    "viewOnGitHub": "Δείτε στο GitHub"
+  },
+  "terminal": {
+    "label": "terminal"
+  },
+  "whatIs": {
+    "title": "Τι είναι το PHM",
+    "precompiled": {
+      "title": "Προμεταγλωττισμένο PHP",
+      "line1": "Χτίζεται μία φορά",
+      "line2": "Εγκαθίσταται άμεσα"
+    },
+    "macosOnly": {
+      "title": "Μόνο macOS",
+      "line1": "Σχεδιασμένο ειδικά για macOS",
+      "line2": "Χωρίς συμβιβασμούς πολλαπλών πλατφορμών"
+    },
+    "noBuildTools": {
+      "title": "Χωρίς εργαλεία build",
+      "line1": "Χωρίς Homebrew",
+      "line2": "Χωρίς MacPorts",
+      "line3": "Χωρίς τοπική μεταγλώττιση"
+    },
+    "deterministic": {
+      "title": "Ντετερμινιστικό και καθαρό",
+      "line1": "Χωρίς συγκρούσεις εκδόσεων",
+      "line2": "Ντόπιο για το Mac σας",
+      "line3": "Πάντα το ίδιο αποτέλεσμα"
+    }
+  },
+  "why": {
+    "title": "Γιατί υπάρχει το PHM",
+    "problemLine1": "Η επαναμεταγλώττιση του PHP σε κάθε laptop έγινε φυσιολογική.",
+    "problemLine2": "Το φυσιολογικό δεν σημαίνει λογικό.",
+    "solutionLine1": "Το PHM ακολουθεί το δοκιμασμένο πρότυπο του Debian:",
+    "solutionHighlight": "χτίσε μία φορά, διένειμε τα δυαδικά, εγκατέστησε άμεσα."
+  },
+  "installation": {
+    "title": "Εγκατάσταση",
+    "addToProfile": "Έπειτα πρόσθεσε στο προφίλ του shell σου:"
+  },
+  "quickStart": {
+    "title": "Γρήγορη εκκίνηση",
+    "interactiveMode": "Διαθέσιμη διαδραστική λειτουργία:",
+    "commentInstall": "# Εγκατάσταση PHP 8.5",
+    "commentSetDefault": "# Ορισμός προεπιλεγμένης έκδοσης",
+    "commentVerify": "# Επαλήθευση"
+  },
+  "features": {
+    "title": "Κύρια χαρακτηριστικά",
+    "binaryPackages": "Δυαδικά πακέτα PHP",
+    "versionScoped": "Επεκτάσεις ανά έκδοση",
+    "fpmManagement": "Διαχείριση υπηρεσίας PHP‑FPM",
+    "extensionToggle": "Ενεργοποίηση / απενεργοποίηση επεκτάσεων",
+    "interactiveTui": "Διαδραστικός οδηγός TUI",
+    "designedFor": "Για MacBook, iMac και Mac mini"
+  },
+  "platform": {
+    "title": "Εύρος πλατφόρμας",
+    "macosOnly": "Το PHM τρέχει μόνο σε macOS.",
+    "explanationLine1": "Είναι μια συνειδητή επιλογή.",
+    "explanationLine2": "Το Linux έχει ήδη εξαιρετικά αποθετήρια PHP.",
+    "explanationLine3": "Το PHM καλύπτει το κενό στο macOS."
+  },
+  "footer": {
+    "githubCli": "GitHub (PHM CLI)",
+    "packagesRepo": "Αποθετήριο πακέτων PHP",
+    "documentation": "Τεκμηρίωση",
+    "quoteLine1": "Η δύναμη δεν προέρχεται από ατελείωτες επαναμεταγλωττίσεις.",
+    "quoteLine2": "Προέρχεται από το να χτίζεις μία φορά — και να μοιράζεσαι σοφά."
+  },
+  "actions": {
+    "copy": "Αντιγραφή",
+    "copied": "Αντιγράφηκε!"
+  }
+}

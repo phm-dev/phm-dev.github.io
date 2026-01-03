@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "PHM — PHP tvarkyklė macOS",
+    "description": "Dvejetainių PHP paketų tvarkyklė macOS. Be Homebrew. Be MacPorts. Be kompiliavimo."
+  },
+  "hero": {
+    "tagline": "Viena kompiliacija. Tūkstančiai diegimų.",
+    "subtitle": "Dvejetainių PHP paketų tvarkyklė macOS.",
+    "subtitleFeatures": "Be Homebrew. Be MacPorts. Be kompiliavimo.",
+    "getStarted": "Pradėti",
+    "viewOnGitHub": "Žiūrėti „GitHub“"
+  },
+  "terminal": {
+    "label": "terminal"
+  },
+  "whatIs": {
+    "title": "Kas yra PHM",
+    "precompiled": {
+      "title": "Iš anksto sukompiliuotas PHP",
+      "line1": "Sukompiliuota kartą",
+      "line2": "Įdiegta akimirksniu"
+    },
+    "macosOnly": {
+      "title": "Tik macOS",
+      "line1": "Sukurta specialiai macOS",
+      "line2": "Be kelių platformų kompromisų"
+    },
+    "noBuildTools": {
+      "title": "Be build įrankių",
+      "line1": "Be Homebrew",
+      "line2": "Be MacPorts",
+      "line3": "Be vietinio kompiliavimo"
+    },
+    "deterministic": {
+      "title": "Deterministinė ir švari",
+      "line1": "Be versijų konfliktų",
+      "line2": "Gimtoji jūsų Mac",
+      "line3": "Visada tas pats rezultatas"
+    }
+  },
+  "why": {
+    "title": "Kodėl egzistuoja PHM",
+    "problemLine1": "PHP perkėlimas iš naujo kiekviename nešiojamajame kompiuteryje tapo norma.",
+    "problemLine2": "Normalu nereiškia protinga.",
+    "solutionLine1": "PHM laikosi patikrinto Debian modelio:",
+    "solutionHighlight": "sukompiliuok kartą, platink dvejetaines, diek akimirksniu."
+  },
+  "installation": {
+    "title": "Diegimas",
+    "addToProfile": "Tada pridėkite prie savo shell profilio:"
+  },
+  "quickStart": {
+    "title": "Greitas startas",
+    "interactiveMode": "Interaktyvus režimas prieinamas:",
+    "commentInstall": "# Įdiegti PHP 8.5",
+    "commentSetDefault": "# Nustatyti numatytąją versiją",
+    "commentVerify": "# Patikrinti"
+  },
+  "features": {
+    "title": "Pagrindinės funkcijos",
+    "binaryPackages": "Dvejetainiai PHP paketai",
+    "versionScoped": "Su versija susieti plėtiniai",
+    "fpmManagement": "PHP‑FPM paslaugos valdymas",
+    "extensionToggle": "Plėtinių įjungimas / išjungimas",
+    "interactiveTui": "Interaktyvus TUI vedlys",
+    "designedFor": "Skirta MacBook, iMac ir Mac mini"
+  },
+  "platform": {
+    "title": "Platformos apimtis",
+    "macosOnly": "PHM veikia tik macOS.",
+    "explanationLine1": "Tai sąmoningas pasirinkimas.",
+    "explanationLine2": "Linux jau turi puikias PHP saugyklas.",
+    "explanationLine3": "PHM užpildo spragą macOS."
+  },
+  "footer": {
+    "githubCli": "GitHub (PHM CLI)",
+    "packagesRepo": "PHP paketų saugykla",
+    "documentation": "Dokumentacija",
+    "quoteLine1": "Galia nekyla iš begalinių perkompiliavimų.",
+    "quoteLine2": "Ji kyla iš to, kad sukompiliuoji kartą — ir daliniesi išmintingai."
+  },
+  "actions": {
+    "copy": "Kopijuoti",
+    "copied": "Nukopijuota!"
+  }
+}

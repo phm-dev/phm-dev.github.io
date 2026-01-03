@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "PHM — PHP мениджър за macOS",
+    "description": "Бинарен мениджър на PHP пакети за macOS. Без Homebrew. Без MacPorts. Без компилация."
+  },
+  "hero": {
+    "tagline": "Една компилация. Хиляди инсталации.",
+    "subtitle": "Бинарен мениджър на PHP пакети за macOS.",
+    "subtitleFeatures": "Без Homebrew. Без MacPorts. Без компилация.",
+    "getStarted": "Започни",
+    "viewOnGitHub": "Виж в GitHub"
+  },
+  "terminal": {
+    "label": "terminal"
+  },
+  "whatIs": {
+    "title": "Какво е PHM",
+    "precompiled": {
+      "title": "Предварително компилиран PHP",
+      "line1": "Компилиран веднъж",
+      "line2": "Инсталиран мигновено"
+    },
+    "macosOnly": {
+      "title": "Само macOS",
+      "line1": "Създаден специално за macOS",
+      "line2": "Без компромиси между платформите"
+    },
+    "noBuildTools": {
+      "title": "Без инструменти за билд",
+      "line1": "Без Homebrew",
+      "line2": "Без MacPorts",
+      "line3": "Без локална компилация"
+    },
+    "deterministic": {
+      "title": "Детерминистичен и чист",
+      "line1": "Без конфликти на версии",
+      "line2": "Нативен за твоя Mac",
+      "line3": "Винаги един и същ резултат"
+    }
+  },
+  "why": {
+    "title": "Защо съществува PHM",
+    "problemLine1": "Прекомпилирането на PHP на всеки лаптоп стана нормално.",
+    "problemLine2": "Нормално не означава разумно.",
+    "solutionLine1": "PHM следва доказания модел на Debian:",
+    "solutionHighlight": "компилирай веднъж, разпространявай двоичните файлове, инсталирай мигновено."
+  },
+  "installation": {
+    "title": "Инсталация",
+    "addToProfile": "След това добави към профила на твоя shell:"
+  },
+  "quickStart": {
+    "title": "Бърз старт",
+    "interactiveMode": "Наличен е интерактивен режим:",
+    "commentInstall": "# Инсталирай PHP 8.5",
+    "commentSetDefault": "# Задай версия по подразбиране",
+    "commentVerify": "# Провери"
+  },
+  "features": {
+    "title": "Ключови функции",
+    "binaryPackages": "Бинарни PHP пакети",
+    "versionScoped": "Разширения, обвързани с версията",
+    "fpmManagement": "Управление на услугата PHP‑FPM",
+    "extensionToggle": "Включване / изключване на разширения",
+    "interactiveTui": "Интерактивен TUI асистент",
+    "designedFor": "За MacBook, iMac и Mac mini"
+  },
+  "platform": {
+    "title": "Обхват на платформата",
+    "macosOnly": "PHM работи само на macOS.",
+    "explanationLine1": "Това е съзнателен избор.",
+    "explanationLine2": "Linux вече има отлични PHP хранилища.",
+    "explanationLine3": "PHM запълва празнината на macOS."
+  },
+  "footer": {
+    "githubCli": "GitHub (PHM CLI)",
+    "packagesRepo": "Хранилище за PHP пакети",
+    "documentation": "Документация",
+    "quoteLine1": "Силата не идва от безкрайни прекомпилации.",
+    "quoteLine2": "Тя идва от това да компилираш веднъж — и да споделяш мъдро."
+  },
+  "actions": {
+    "copy": "Копирай",
+    "copied": "Копирано!"
+  }
+}

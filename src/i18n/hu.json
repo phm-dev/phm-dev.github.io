@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "PHM — PHP‑kezelő macOS‑hez",
+    "description": "Bináris PHP csomagkezelő macOS‑hez. Nincs Homebrew. Nincs MacPorts. Nincs fordítás."
+  },
+  "hero": {
+    "tagline": "Egy build. Ezrek telepítése.",
+    "subtitle": "Bináris PHP csomagkezelő macOS‑hez.",
+    "subtitleFeatures": "Nincs Homebrew. Nincs MacPorts. Nincs fordítás.",
+    "getStarted": "Kezdés",
+    "viewOnGitHub": "Megtekintés GitHubon"
+  },
+  "terminal": {
+    "label": "terminal"
+  },
+  "whatIs": {
+    "title": "Mi a PHM",
+    "precompiled": {
+      "title": "Előre fordított PHP",
+      "line1": "Egyszer fordítva",
+      "line2": "Azonnal telepítve"
+    },
+    "macosOnly": {
+      "title": "Csak macOS",
+      "line1": "Kifejezetten macOS‑re tervezve",
+      "line2": "Nincsenek többplatformos kompromisszumok"
+    },
+    "noBuildTools": {
+      "title": "Nincsenek build eszközök",
+      "line1": "Nincs Homebrew",
+      "line2": "Nincs MacPorts",
+      "line3": "Nincs helyi fordítás"
+    },
+    "deterministic": {
+      "title": "Determinista és tiszta",
+      "line1": "Nincsenek verzióütközések",
+      "line2": "Natív a Mac‑edhez",
+      "line3": "Mindig ugyanaz az eredmény"
+    }
+  },
+  "why": {
+    "title": "Miért létezik a PHM",
+    "problemLine1": "Minden laptopon újrafordítani a PHP‑t normává vált.",
+    "problemLine2": "A normális nem jelenti, hogy ésszerű.",
+    "solutionLine1": "A PHM a bevált Debian‑mintát követi:",
+    "solutionHighlight": "fordíts egyszer, terjeszd a binárisokat, telepíts azonnal."
+  },
+  "installation": {
+    "title": "Telepítés",
+    "addToProfile": "Ezután add hozzá a shell‑profilodhoz:"
+  },
+  "quickStart": {
+    "title": "Gyors indítás",
+    "interactiveMode": "Interaktív mód elérhető:",
+    "commentInstall": "# PHP 8.5 telepítése",
+    "commentSetDefault": "# Alapértelmezett verzió beállítása",
+    "commentVerify": "# Ellenőrzés"
+  },
+  "features": {
+    "title": "Fő funkciók",
+    "binaryPackages": "Bináris PHP csomagok",
+    "versionScoped": "Verzióhoz kötött bővítmények",
+    "fpmManagement": "PHP‑FPM szolgáltatás kezelése",
+    "extensionToggle": "Bővítmények be/ki",
+    "interactiveTui": "Interaktív TUI varázsló",
+    "designedFor": "MacBookhoz, iMachez és Mac minihez"
+  },
+  "platform": {
+    "title": "Platformhatókör",
+    "macosOnly": "A PHM csak macOS‑en fut.",
+    "explanationLine1": "Ez tudatos döntés.",
+    "explanationLine2": "A Linuxnak már kiváló PHP‑tárolói vannak.",
+    "explanationLine3": "A PHM a macOS‑en lévő rést tölti be."
+  },
+  "footer": {
+    "githubCli": "GitHub (PHM CLI)",
+    "packagesRepo": "PHP csomagtároló",
+    "documentation": "Dokumentáció",
+    "quoteLine1": "Az erő nem a végtelen újrafordításból fakad.",
+    "quoteLine2": "Az erő abból fakad, hogy egyszer építesz — és bölcsen megosztod."
+  },
+  "actions": {
+    "copy": "Másolás",
+    "copied": "Másolva!"
+  }
+}

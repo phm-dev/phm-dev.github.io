@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "PHM — PHP‑manager til macOS",
+    "description": "En binær PHP‑pakke‑manager til macOS. Ingen Homebrew. Ingen MacPorts. Ingen kompilering."
+  },
+  "hero": {
+    "tagline": "Én build. Tusindvis af installationer.",
+    "subtitle": "En binær PHP‑pakke‑manager til macOS.",
+    "subtitleFeatures": "Ingen Homebrew. Ingen MacPorts. Ingen kompilering.",
+    "getStarted": "Kom i gang",
+    "viewOnGitHub": "Se på GitHub"
+  },
+  "terminal": {
+    "label": "terminal"
+  },
+  "whatIs": {
+    "title": "Hvad er PHM",
+    "precompiled": {
+      "title": "Forudkompileret PHP",
+      "line1": "Bygget én gang",
+      "line2": "Installeret med det samme"
+    },
+    "macosOnly": {
+      "title": "Kun macOS",
+      "line1": "Designet specifikt til macOS",
+      "line2": "Ingen kompromiser på tværs af platforme"
+    },
+    "noBuildTools": {
+      "title": "Ingen build‑værktøjer",
+      "line1": "Ingen Homebrew",
+      "line2": "Ingen MacPorts",
+      "line3": "Ingen lokal kompilering"
+    },
+    "deterministic": {
+      "title": "Deterministisk og ren",
+      "line1": "Ingen versionskonflikter",
+      "line2": "Nativt til din Mac",
+      "line3": "Altid samme resultat"
+    }
+  },
+  "why": {
+    "title": "Hvorfor PHM findes",
+    "problemLine1": "At genkompilere PHP på hver bærbar blev normalt.",
+    "problemLine2": "Normalt betyder ikke fornuftigt.",
+    "solutionLine1": "PHM følger det gennemprøvede Debian‑mønster:",
+    "solutionHighlight": "byg én gang, distribuér binærer, installér med det samme."
+  },
+  "installation": {
+    "title": "Installation",
+    "addToProfile": "Tilføj derefter til din shell‑profil:"
+  },
+  "quickStart": {
+    "title": "Hurtig start",
+    "interactiveMode": "Interaktiv tilstand tilgængelig:",
+    "commentInstall": "# Installer PHP 8.5",
+    "commentSetDefault": "# Indstil standardversion",
+    "commentVerify": "# Verificér"
+  },
+  "features": {
+    "title": "Nøglefunktioner",
+    "binaryPackages": "Binære PHP‑pakker",
+    "versionScoped": "Versionsafgrænsede udvidelser",
+    "fpmManagement": "Styring af PHP‑FPM‑tjenesten",
+    "extensionToggle": "Aktivér / deaktivér udvidelser",
+    "interactiveTui": "Interaktiv TUI‑guide",
+    "designedFor": "Til MacBook, iMac og Mac mini"
+  },
+  "platform": {
+    "title": "Platformsomfang",
+    "macosOnly": "PHM kører kun på macOS.",
+    "explanationLine1": "Det er et bevidst valg.",
+    "explanationLine2": "Linux har allerede fremragende PHP‑repositories.",
+    "explanationLine3": "PHM udfylder hullet på macOS."
+  },
+  "footer": {
+    "githubCli": "GitHub (PHM CLI)",
+    "packagesRepo": "PHP‑pakke‑repository",
+    "documentation": "Dokumentation",
+    "quoteLine1": "Kraft kommer ikke fra endeløse genkompileringer.",
+    "quoteLine2": "Den kommer af at bygge én gang — og dele klogt."
+  },
+  "actions": {
+    "copy": "Kopiér",
+    "copied": "Kopieret!"
+  }
+}

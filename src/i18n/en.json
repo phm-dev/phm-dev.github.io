@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "PHM — PHP Manager for macOS",
+    "description": "A binary PHP package manager for macOS. No Homebrew. No MacPorts. No compilation."
+  },
+  "hero": {
+    "tagline": "One build. Thousands of installs.",
+    "subtitle": "A binary PHP package manager for macOS.",
+    "subtitleFeatures": "No Homebrew. No MacPorts. No compilation.",
+    "getStarted": "Get Started",
+    "viewOnGitHub": "View on GitHub"
+  },
+  "terminal": {
+    "label": "terminal"
+  },
+  "whatIs": {
+    "title": "What Is PHM",
+    "precompiled": {
+      "title": "Precompiled PHP",
+      "line1": "Built once",
+      "line2": "Installed instantly"
+    },
+    "macosOnly": {
+      "title": "macOS Only",
+      "line1": "Designed specifically for macOS",
+      "line2": "No cross-platform compromises"
+    },
+    "noBuildTools": {
+      "title": "No Build Tools",
+      "line1": "No Homebrew",
+      "line2": "No MacPorts",
+      "line3": "No local compilation"
+    },
+    "deterministic": {
+      "title": "Deterministic & Clean",
+      "line1": "No version conflicts",
+      "line2": "Native for your Mac",
+      "line3": "Always the same result"
+    }
+  },
+  "why": {
+    "title": "Why PHM Exists",
+    "problemLine1": "Recompiling PHP on every laptop became normal.",
+    "problemLine2": "Normal does not mean sane.",
+    "solutionLine1": "PHM follows the proven Debian pattern:",
+    "solutionHighlight": "build once, distribute binaries, install instantly."
+  },
+  "installation": {
+    "title": "Installation",
+    "addToProfile": "Then add to your shell profile:"
+  },
+  "quickStart": {
+    "title": "Quick Start",
+    "interactiveMode": "Interactive mode available:",
+    "commentInstall": "# Install PHP 8.5",
+    "commentSetDefault": "# Set default version",
+    "commentVerify": "# Verify"
+  },
+  "features": {
+    "title": "Key Features",
+    "binaryPackages": "Binary PHP packages",
+    "versionScoped": "Version-scoped extensions",
+    "fpmManagement": "PHP-FPM service management",
+    "extensionToggle": "Extension enable / disable",
+    "interactiveTui": "Interactive TUI wizard",
+    "designedFor": "For MacBooks, iMacs, and Mac mini"
+  },
+  "platform": {
+    "title": "Platform Scope",
+    "macosOnly": "PHM runs on macOS only.",
+    "explanationLine1": "This is a deliberate choice.",
+    "explanationLine2": "Linux already has excellent PHP repositories.",
+    "explanationLine3": "PHM solves the macOS gap."
+  },
+  "footer": {
+    "githubCli": "GitHub (PHM CLI)",
+    "packagesRepo": "PHP Packages Repository",
+    "documentation": "Documentation",
+    "quoteLine1": "Power does not come from endless recompilation.",
+    "quoteLine2": "It comes from building once — and sharing wisely."
+  },
+  "actions": {
+    "copy": "Copy",
+    "copied": "Copied!"
+  }
+}

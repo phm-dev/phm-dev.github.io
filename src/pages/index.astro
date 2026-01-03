@@ -1,16 +1,74 @@
 ---
+import '../styles/global.css';
 
+const siteUrl = 'https://phm-dev.github.io';
+const supportedLanguages = ['bg', 'cs', 'da', 'de', 'el', 'en', 'es', 'et', 'fi', 'fr', 'ga', 'hr', 'hu', 'it', 'lb', 'lt', 'lv', 'mt', 'nl', 'pl', 'pt', 'ro', 'sk', 'sl', 'sv'];
+const defaultLanguage = 'en';
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- SEO: Redirect & Canonical -->
+		<meta http-equiv="refresh" content={`0;url=/${defaultLanguage}.html`} />
+		<link rel="canonical" href={`${siteUrl}/${defaultLanguage}.html`} />
+
+		<!-- SEO: hreflang tags -->
+		{supportedLanguages.map(lang => (
+			<link rel="alternate" hreflang={lang} href={`${siteUrl}/${lang}.html`} />
+		))}
+		<link rel="alternate" hreflang="x-default" href={`${siteUrl}/${defaultLanguage}.html`} />
+
+		<link rel="preload" href="/fonts/797e433ab948586e-s.p.dbea232f.woff2" as="font" crossorigin="" type="font/woff2" />
+		<link rel="preload" href="/fonts/caa3a2e1cccd8315-s.p.853070df.woff2" as="font" crossorigin="" type="font/woff2" />
+		<title>PHM — Redirecting...</title>
+		<meta name="description" content="A binary PHP package manager for macOS. No Homebrew. No MacPorts. No compilation." />
+		<link rel="icon" href="/icon-light-32x32.png" media="(prefers-color-scheme: light)" />
+		<link rel="icon" href="/icon-dark-32x32.png" media="(prefers-color-scheme: dark)" />
+		<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="/apple-icon.png" />
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="font-sans antialiased">
+		<main class="relative min-h-screen flex items-center justify-center">
+			<div class="absolute inset-0 overflow-hidden">
+				<div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-slow-float"></div>
+				<div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-slow-float" style="animation-delay:-3s"></div>
+			</div>
+			<div class="relative z-10 text-center space-y-6">
+				<h1 class="text-4xl md:text-6xl font-bold tracking-tighter text-balance">PHM</h1>
+				<p class="text-lg md:text-xl text-muted-foreground">Redirecting to your preferred language...</p>
+				<p class="text-sm text-muted-foreground/70">
+					If you are not redirected automatically, <a href={`/${defaultLanguage}.html`} class="text-primary hover:underline">click here</a>.
+				</p>
+			</div>
+		</main>
+
+		<!-- JS fallback for language detection (enhances meta refresh) -->
+		<script define:vars={{ supportedLanguages, defaultLanguage }}>
+			function getPreferredLanguage() {
+				const languages = navigator.languages || [navigator.language];
+
+				for (const lang of languages) {
+					const code = lang.split('-')[0].toLowerCase();
+					if (supportedLanguages.includes(code)) {
+						return code;
+					}
+				}
+
+				return defaultLanguage;
+			}
+
+			const preferredLang = getPreferredLanguage();
+
+			// Only redirect via JS if different from default (meta refresh handles default)
+			if (preferredLang !== defaultLanguage) {
+				window.location.replace('/' + preferredLang + '.html');
+			}
+		</script>
+
+		<!-- 100% privacy-first analytics -->
+		<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 	</body>
 </html>

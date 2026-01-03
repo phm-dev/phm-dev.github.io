@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "PHM — PHP‑beheerder voor macOS",
+    "description": "Een binaire PHP‑pakketbeheerder voor macOS. Geen Homebrew. Geen MacPorts. Geen compilatie."
+  },
+  "hero": {
+    "tagline": "Eén build. Duizenden installs.",
+    "subtitle": "Een binaire PHP‑pakketbeheerder voor macOS.",
+    "subtitleFeatures": "Geen Homebrew. Geen MacPorts. Geen compilatie.",
+    "getStarted": "Aan de slag",
+    "viewOnGitHub": "Bekijk op GitHub"
+  },
+  "terminal": {
+    "label": "terminal"
+  },
+  "whatIs": {
+    "title": "Wat is PHM",
+    "precompiled": {
+      "title": "Voorgecompileerde PHP",
+      "line1": "Eén keer gebouwd",
+      "line2": "Direct geïnstalleerd"
+    },
+    "macosOnly": {
+      "title": "Alleen macOS",
+      "line1": "Speciaal ontworpen voor macOS",
+      "line2": "Geen cross‑platform compromissen"
+    },
+    "noBuildTools": {
+      "title": "Geen build‑tools",
+      "line1": "Geen Homebrew",
+      "line2": "Geen MacPorts",
+      "line3": "Geen lokale compilatie"
+    },
+    "deterministic": {
+      "title": "Deterministisch en schoon",
+      "line1": "Geen versieconflicten",
+      "line2": "Native voor je Mac",
+      "line3": "Altijd hetzelfde resultaat"
+    }
+  },
+  "why": {
+    "title": "Waarom PHM bestaat",
+    "problemLine1": "PHP opnieuw compileren op elke laptop werd normaal.",
+    "problemLine2": "Normaal betekent niet verstandig.",
+    "solutionLine1": "PHM volgt het beproefde Debian‑patroon:",
+    "solutionHighlight": "één keer bouwen, binaire pakketten verspreiden, direct installeren."
+  },
+  "installation": {
+    "title": "Installatie",
+    "addToProfile": "Voeg daarna toe aan je shellprofiel:"
+  },
+  "quickStart": {
+    "title": "Snel starten",
+    "interactiveMode": "Interactieve modus beschikbaar:",
+    "commentInstall": "# Installeer PHP 8.5",
+    "commentSetDefault": "# Standaardversie instellen",
+    "commentVerify": "# Verifiëren"
+  },
+  "features": {
+    "title": "Belangrijkste functies",
+    "binaryPackages": "Binaire PHP‑pakketten",
+    "versionScoped": "Versiegebonden extensies",
+    "fpmManagement": "Beheer van de PHP‑FPM‑service",
+    "extensionToggle": "Extensies in-/uitschakelen",
+    "interactiveTui": "Interactieve TUI‑wizard",
+    "designedFor": "Voor MacBook, iMac en Mac mini"
+  },
+  "platform": {
+    "title": "Platformbereik",
+    "macosOnly": "PHM draait alleen op macOS.",
+    "explanationLine1": "Dit is een bewuste keuze.",
+    "explanationLine2": "Linux heeft al uitstekende PHP‑repositories.",
+    "explanationLine3": "PHM vult de macOS‑kloof."
+  },
+  "footer": {
+    "githubCli": "GitHub (PHM CLI)",
+    "packagesRepo": "PHP‑pakketrepository",
+    "documentation": "Documentatie",
+    "quoteLine1": "Kracht komt niet van eindeloze hercompilatie.",
+    "quoteLine2": "Het komt van één keer bouwen — en verstandig delen."
+  },
+  "actions": {
+    "copy": "Kopiëren",
+    "copied": "Gekopieerd!"
+  }
+}
