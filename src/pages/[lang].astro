@@ -91,7 +91,7 @@ const languageNames: Record<string, string> = {
 };
 
 if (!messages[lang]) {
-  return Astro.redirect("/en.html");
+  return Astro.redirect("/en/");
 }
 
 const t = (await messages[lang]()).default;
@@ -106,15 +106,15 @@ const supportedLanguages = Object.keys(messages);
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<!-- SEO: Canonical & hreflang -->
-		<link rel="canonical" href={`${siteUrl}/${lang}.html`} />
+		<link rel="canonical" href={`${siteUrl}/${lang}/`} />
 		{supportedLanguages.map(l => (
-			<link rel="alternate" hreflang={l} href={`${siteUrl}/${l}.html`} />
+			<link rel="alternate" hreflang={l} href={`${siteUrl}/${l}/`} />
 		))}
-		<link rel="alternate" hreflang="x-default" href={`${siteUrl}/en.html`} />
+		<link rel="alternate" hreflang="x-default" href={`${siteUrl}/en/`} />
 
 		<!-- SEO: Open Graph -->
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content={`${siteUrl}/${lang}.html`} />
+		<meta property="og:url" content={`${siteUrl}/${lang}/`} />
 		<meta property="og:title" content={t.meta.title} />
 		<meta property="og:description" content={t.meta.description} />
 		<meta property="og:locale" content={`${lang}_${lang.toUpperCase()}`} />
@@ -397,7 +397,7 @@ php -v</code></pre>
 								{l === lang ? (
 									<span class="text-sm text-foreground font-medium">{languageNames[l]}</span>
 								) : (
-									<a href={`/${l}.html`} class="text-sm text-muted-foreground hover:text-foreground transition-colors">{languageNames[l]}</a>
+									<a href={`/${l}/`} class="text-sm text-muted-foreground hover:text-foreground transition-colors">{languageNames[l]}</a>
 								)}
 							</>
 						))}

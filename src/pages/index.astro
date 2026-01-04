@@ -12,14 +12,14 @@ const defaultLanguage = 'en';
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<!-- SEO: Redirect & Canonical -->
-		<meta http-equiv="refresh" content={`0;url=/${defaultLanguage}.html`} />
-		<link rel="canonical" href={`${siteUrl}/${defaultLanguage}.html`} />
+		<meta http-equiv="refresh" content={`0;url=/${defaultLanguage}/`} />
+		<link rel="canonical" href={`${siteUrl}/${defaultLanguage}/`} />
 
 		<!-- SEO: hreflang tags -->
 		{supportedLanguages.map(lang => (
-			<link rel="alternate" hreflang={lang} href={`${siteUrl}/${lang}.html`} />
+			<link rel="alternate" hreflang={lang} href={`${siteUrl}/${lang}/`} />
 		))}
-		<link rel="alternate" hreflang="x-default" href={`${siteUrl}/${defaultLanguage}.html`} />
+		<link rel="alternate" hreflang="x-default" href={`${siteUrl}/${defaultLanguage}/`} />
 
 		<link rel="preload" href="/fonts/797e433ab948586e-s.p.dbea232f.woff2" as="font" crossorigin="" type="font/woff2" />
 		<link rel="preload" href="/fonts/caa3a2e1cccd8315-s.p.853070df.woff2" as="font" crossorigin="" type="font/woff2" />
@@ -40,7 +40,7 @@ const defaultLanguage = 'en';
 				<h1 class="text-4xl md:text-6xl font-bold tracking-tighter text-balance">PHM</h1>
 				<p class="text-lg md:text-xl text-muted-foreground">Redirecting to your preferred language...</p>
 				<p class="text-sm text-muted-foreground/70">
-					If you are not redirected automatically, <a href={`/${defaultLanguage}.html`} class="text-primary hover:underline">click here</a>.
+					If you are not redirected automatically, <a href={`/${defaultLanguage}/`} class="text-primary hover:underline">click here</a>.
 				</p>
 			</div>
 		</main>
@@ -64,7 +64,7 @@ const defaultLanguage = 'en';
 
 			// Only redirect via JS if different from default (meta refresh handles default)
 			if (preferredLang !== defaultLanguage) {
-				window.location.replace('/' + preferredLang + '.html');
+				window.location.replace('/' + preferredLang + '/');
 			}
 		</script>
 
