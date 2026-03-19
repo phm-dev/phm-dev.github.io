@@ -1,0 +1,400 @@
+---
+interface Props {
+  lang: 'en' | 'pl';
+}
+
+const { lang } = Astro.props;
+
+const t = {
+  en: {
+    tagline: 'One build. Thousands of installs.',
+    subtitle: 'A binary PHP package manager for macOS.',
+    subtitleFeatures: 'No Homebrew. No MacPorts. No compilation.',
+    getStarted: 'Get Started',
+    viewOnGitHub: 'View on GitHub',
+    terminal: 'terminal',
+    whatIsTitle: 'What Is PHM',
+    precompiledTitle: 'Precompiled PHP',
+    precompiledLine1: 'Built once',
+    precompiledLine2: 'Installed instantly',
+    macosTitle: 'macOS Only',
+    macosLine1: 'Designed specifically for macOS',
+    macosLine2: 'No cross-platform compromises',
+    noBuildTitle: 'No Build Tools',
+    noBuildLine1: 'No Homebrew',
+    noBuildLine2: 'No MacPorts',
+    noBuildLine3: 'No local compilation',
+    deterministicTitle: 'Deterministic & Clean',
+    deterministicLine1: 'No version conflicts',
+    deterministicLine2: 'Native for your Mac',
+    deterministicLine3: 'Always the same result',
+    whyTitle: 'Why PHM Exists',
+    problemLine1: 'Recompiling PHP on every laptop became normal.',
+    problemLine2: 'Normal does not mean sane.',
+    solutionLine1: 'PHM follows the proven Debian pattern:',
+    solutionHighlight: 'build once, distribute binaries, install instantly.',
+    installTitle: 'Installation',
+    addToProfile: 'Then add to your shell profile:',
+    quickStartTitle: 'Quick Start',
+    selfUpdate: 'Keep PHM up to date:',
+    commentInstall: '# Install PHP 8.5',
+    commentSetDefault: '# Set default version',
+    commentVerify: '# Verify',
+    featuresTitle: 'Key Features',
+    binaryPackages: 'Binary PHP packages',
+    versionScoped: 'Version-scoped extensions',
+    fpmManagement: 'PHP-FPM service management',
+    extensionToggle: 'Extension enable / disable',
+    interactiveTui: 'Interactive TUI wizard',
+    designedFor: 'For MacBooks, iMacs, and Mac mini',
+    platformTitle: 'Platform Scope',
+    macosOnly: 'PHM runs on macOS only.',
+    platformLine1: 'This is a deliberate choice.',
+    platformLine2: 'Linux already has excellent PHP repositories.',
+    platformLine3: 'PHM solves the macOS gap.',
+    copy: 'Copy',
+    copied: 'Copied!',
+    quoteLine1: 'Power does not come from endless recompilation.',
+    quoteLine2: 'It comes from building once — and sharing wisely.',
+    documentation: 'Documentation',
+    docsLink: '/overview/',
+  },
+  pl: {
+    tagline: 'Jeden build. Tysiące instalacji.',
+    subtitle: 'Binarny menedżer pakietów PHP dla macOS.',
+    subtitleFeatures: 'Bez Homebrew. Bez MacPorts. Bez kompilacji.',
+    getStarted: 'Rozpocznij',
+    viewOnGitHub: 'Zobacz na GitHub',
+    terminal: 'terminal',
+    whatIsTitle: 'Czym jest PHM',
+    precompiledTitle: 'Prekompilowane PHP',
+    precompiledLine1: 'Zbudowane raz',
+    precompiledLine2: 'Instalowane natychmiast',
+    macosTitle: 'Tylko macOS',
+    macosLine1: 'Zaprojektowane specjalnie dla macOS',
+    macosLine2: 'Bez kompromisów wieloplatformowych',
+    noBuildTitle: 'Bez narzędzi budowania',
+    noBuildLine1: 'Bez Homebrew',
+    noBuildLine2: 'Bez MacPorts',
+    noBuildLine3: 'Bez lokalnej kompilacji',
+    deterministicTitle: 'Deterministyczne i czyste',
+    deterministicLine1: 'Bez konfliktów wersji',
+    deterministicLine2: 'Natywne dla Twojego Maca',
+    deterministicLine3: 'Zawsze ten sam wynik',
+    whyTitle: 'Dlaczego PHM istnieje',
+    problemLine1: 'Rekompilacja PHP na każdym laptopie stała się normą.',
+    problemLine2: 'Normalne nie znaczy rozsądne.',
+    solutionLine1: 'PHM podąża za sprawdzonym wzorcem Debiana:',
+    solutionHighlight: 'zbuduj raz, dystrybuuj binaria, instaluj natychmiast.',
+    installTitle: 'Instalacja',
+    addToProfile: 'Następnie dodaj do profilu powłoki:',
+    quickStartTitle: 'Szybki start',
+    selfUpdate: 'Aktualizuj PHM:',
+    commentInstall: '# Zainstaluj PHP 8.5',
+    commentSetDefault: '# Ustaw domyślną wersję',
+    commentVerify: '# Zweryfikuj',
+    featuresTitle: 'Kluczowe funkcje',
+    binaryPackages: 'Binarne pakiety PHP',
+    versionScoped: 'Rozszerzenia powiązane z wersją',
+    fpmManagement: 'Zarządzanie usługą PHP-FPM',
+    extensionToggle: 'Włączanie / wyłączanie rozszerzeń',
+    interactiveTui: 'Interaktywny kreator TUI',
+    designedFor: 'Dla MacBooków, iMaców i Mac mini',
+    platformTitle: 'Zakres platformy',
+    macosOnly: 'PHM działa tylko na macOS.',
+    platformLine1: 'To świadomy wybór.',
+    platformLine2: 'Linux ma już doskonałe repozytoria PHP.',
+    platformLine3: 'PHM wypełnia lukę na macOS.',
+    copy: 'Kopiuj',
+    copied: 'Skopiowano!',
+    quoteLine1: 'Siła nie pochodzi z niekończącej się rekompilacji.',
+    quoteLine2: 'Pochodzi z budowania raz — i mądrego dzielenia się.',
+    documentation: 'Dokumentacja',
+    docsLink: '/pl/overview/',
+  },
+}[lang];
+---
+
+<div class="phm-hero">
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">PHM</h1>
+        <p class="hero-tagline">{t.tagline}</p>
+      </div>
+      <p class="hero-subtitle">{t.subtitle}<br />{t.subtitleFeatures}</p>
+      <div class="terminal-wrapper">
+        <div class="terminal">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="terminal-label">{t.terminal}</span>
+          </div>
+          <div class="terminal-body">
+            <span class="terminal-prompt">$</span>
+            <span id="terminal-text"></span>
+            <span class="terminal-cursor" id="cursor"></span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href={t.docsLink} class="btn btn-primary">{t.documentation}</a>
+        <a href="https://github.com/phm-dev/phm" class="btn btn-secondary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+          {t.viewOnGitHub}
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- What Is PHM -->
+  <section class="section section-glow">
+    <div class="glow-overlay"></div>
+    <div class="section-inner">
+      <h2 class="section-title">{t.whatIsTitle}</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"></path><path d="M12 22V12"></path><path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"></path><path d="m7.5 4.27 9 5.15"></path></svg>
+          </div>
+          <h3>{t.precompiledTitle}</h3>
+          <p>{t.precompiledLine1}<br />{t.precompiledLine2}</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="2"></rect><rect width="6" height="6" x="9" y="9" rx="1"></rect><path d="M15 2v2"></path><path d="M15 20v2"></path><path d="M2 15h2"></path><path d="M2 9h2"></path><path d="M20 15h2"></path><path d="M20 9h2"></path><path d="M9 2v2"></path><path d="M9 20v2"></path></svg>
+          </div>
+          <h3>{t.macosTitle}</h3>
+          <p>{t.macosLine1}<br />{t.macosLine2}</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 12-8.373 8.373a1 1 0 1 1-3-3L12 9"></path><path d="m18 15 4-4"></path><path d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172V7l-2.26-2.26a6 6 0 0 0-4.202-1.756L9 2.96l.92.82A6.18 6.18 0 0 1 12 8.4V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5"></path></svg>
+          </div>
+          <h3>{t.noBuildTitle}</h3>
+          <p>{t.noBuildLine1}<br />{t.noBuildLine2}<br />{t.noBuildLine3}</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+          </div>
+          <h3>{t.deterministicTitle}</h3>
+          <p>{t.deterministicLine1}<br />{t.deterministicLine2}<br />{t.deterministicLine3}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why PHM -->
+  <section class="section section-alt section-glow">
+    <div class="blob-center"></div>
+    <div class="section-inner section-narrow">
+      <h2 class="section-title">{t.whyTitle}</h2>
+      <div class="why-content">
+        <p class="why-problem">{t.problemLine1}<br />{t.problemLine2}</p>
+        <p class="why-solution">{t.solutionLine1}<br /><strong>{t.solutionHighlight}</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Installation -->
+  <section class="section" id="installation">
+    <div class="section-inner section-narrow">
+      <h2 class="section-title">{t.installTitle}</h2>
+      <div class="code-block">
+        <div class="code-header">
+          <span class="code-lang">bash</span>
+        </div>
+        <pre><code>curl -fsSL https://raw.githubusercontent.com/phm-dev/phm/main/scripts/install-phm.sh | bash</code></pre>
+      </div>
+      <p class="text-center text-muted">{t.addToProfile}</p>
+      <div class="code-block">
+        <div class="code-header">
+          <span class="code-lang">bash</span>
+        </div>
+        <pre><code>export PATH="/opt/php/bin:$PATH"</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Start -->
+  <section class="section section-alt">
+    <div class="section-inner section-narrow">
+      <h2 class="section-title">{t.quickStartTitle}</h2>
+      <div class="code-block">
+        <div class="code-header">
+          <span class="code-lang">bash</span>
+        </div>
+        <pre><code>{t.commentInstall}
+phm install php8.5-cli php8.5-fpm php8.5-redis
+
+{t.commentSetDefault}
+phm use 8.5
+
+{t.commentVerify}
+php -v</code></pre>
+      </div>
+      <p class="text-center text-muted">{t.selfUpdate} <code>phm self-update</code></p>
+    </div>
+  </section>
+
+  <!-- Key Features -->
+  <section class="section">
+    <div class="section-inner section-narrow">
+      <h2 class="section-title">{t.featuresTitle}</h2>
+      <div class="checklist">
+        <div class="check-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+          <span>{t.binaryPackages}</span>
+        </div>
+        <div class="check-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+          <span>{t.versionScoped}</span>
+        </div>
+        <div class="check-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+          <span>{t.fpmManagement}</span>
+        </div>
+        <div class="check-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+          <span>{t.extensionToggle}</span>
+        </div>
+        <div class="check-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+          <span>{t.interactiveTui}</span>
+        </div>
+        <div class="check-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+          <span>{t.designedFor}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Platform Scope -->
+  <section class="section section-alt section-glow">
+    <div class="blob-center blob-secondary"></div>
+    <div class="section-inner section-narrow text-center">
+      <div class="apple-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z"></path><path d="M10 2c1 .5 2 2 2 5"></path></svg>
+      </div>
+      <h2 class="section-title">{t.platformTitle}</h2>
+      <p class="platform-highlight">{t.macosOnly}</p>
+      <p class="text-muted">{t.platformLine1}<br />{t.platformLine2}<br />{t.platformLine3}</p>
+    </div>
+  </section>
+
+  <!-- Quote -->
+  <section class="section">
+    <div class="section-inner section-narrow text-center">
+      <p class="quote">{t.quoteLine1}<br />{t.quoteLine2}</p>
+    </div>
+  </section>
+</div>
+
+{/* JSON-LD Structured Data */}
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "PHM",
+      "alternateName": "PHP Manager for macOS",
+      "url": "https://phm-dev.github.io",
+      "description": lang === 'pl'
+        ? "Binarny menedżer pakietów PHP dla macOS. Bez Homebrew. Bez MacPorts. Bez kompilacji."
+        : "A binary PHP package manager for macOS. No Homebrew. No MacPorts. No compilation.",
+      "inLanguage": [lang, lang === 'en' ? 'pl' : 'en'],
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "PHM",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "macOS",
+      "url": "https://github.com/phm-dev/phm",
+      "downloadUrl": "https://raw.githubusercontent.com/phm-dev/phm/main/scripts/install-phm.sh",
+      "softwareVersion": "latest",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "description": "APT-style binary package manager for PHP on macOS",
+    },
+    {
+      "@type": "Organization",
+      "name": "PHM",
+      "url": "https://github.com/phm-dev",
+      "logo": "https://phm-dev.github.io/logo.png",
+      "sameAs": [
+        "https://github.com/phm-dev/phm",
+        "https://github.com/phm-dev/php-packages"
+      ]
+    }
+  ]
+})} />
+
+<script>
+  const commands = [
+    'phm install php8.5-cli php8.5-fpm php8.5-redis',
+    'phm install composer symfony',
+    'phm use 8.5',
+    'symfony server:start',
+    'php -v',
+  ];
+  let commandIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  let isPaused = false;
+
+  const terminalText = document.getElementById('terminal-text');
+
+  function typeCommand() {
+    if (!terminalText) return;
+    const currentCommand = commands[commandIndex];
+
+    if (isPaused) {
+      setTimeout(typeCommand, 2000);
+      isPaused = false;
+      isDeleting = true;
+      return;
+    }
+
+    if (isDeleting) {
+      terminalText.textContent = currentCommand.substring(0, charIndex - 1);
+      charIndex--;
+      if (charIndex === 0) {
+        isDeleting = false;
+        commandIndex = (commandIndex + 1) % commands.length;
+      }
+      setTimeout(typeCommand, 30);
+    } else {
+      terminalText.textContent = currentCommand.substring(0, charIndex + 1);
+      charIndex++;
+      if (charIndex === currentCommand.length) {
+        isPaused = true;
+      }
+      setTimeout(typeCommand, 80);
+    }
+  }
+
+  typeCommand();
+
+  // Scroll animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-in');
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+  document.querySelectorAll('.feature-card, .section-title, .check-item, .code-block, .apple-icon').forEach(el => {
+    el.classList.add('scroll-animate');
+    observer.observe(el);
+  });
+</script>

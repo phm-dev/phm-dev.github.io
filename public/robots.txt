@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://phm-dev.github.io/sitemap-index.xml
