@@ -209,9 +209,8 @@ To nie jest wybór między *Docker a Native*. To jest kwestia właściwego podzi
 # Infrastruktura — Docker
 docker compose up -d mysql redis rabbitmq opensearch
 
-# PHP runtime — natywnie, zarządzany przez PHM
-phm install php8.5-cli php8.5-fpm php8.5-redis
-symfony server:start -d
+# PHP runtime — natywnie
+php -S localhost:8000
 ```
 
 Takie podejście nie jest kompromisem. To jest właściwy podział narzędzi według ich natury:
@@ -233,14 +232,6 @@ To są prawdziwe wyjątki. Problem zaczyna się wtedy, gdy wyjątek zostaje ogł
 Prawdziwy problem PHP przez lata nie brzmiał: *„potrzebujemy Dockera"*. Brzmiał: **przez lata brakowało dobrego, lekkiego i przewidywalnego sposobu na zarządzanie lokalnym runtime PHP oraz jego wersjami**.
 
 Gdy ekosystem nie dawał wygodnej odpowiedzi na pytanie *jak łatwo zainstalować i przełączać wersje PHP między projektami*, naturalnie pojawił się skrót: *„to wrzućmy wszystko do kontenera"*. I Docker stał się dla wielu zespołów nie tyle najlepszym rozwiązaniem, co zastępczym obejściem braków toolingowych.
-
-PHM istnieje żeby wypełnić tę lukę. Natywny runtime PHP na macOS, zarządzany jak `apt` na Linuxie:
-
-```bash
-phm install php8.5-cli php8.5-fpm php8.5-redis
-phm install composer symfony
-phm use 8.5
-```
 
 ## Wniosek
 

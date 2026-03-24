@@ -209,9 +209,8 @@ This isn't a choice between *Docker and Native*. It's about the proper separatio
 # Infrastructure — Docker
 docker compose up -d mysql redis rabbitmq opensearch
 
-# PHP runtime — natively, managed by PHM
-phm install php8.5-cli php8.5-fpm php8.5-redis
-symfony server:start -d
+# PHP runtime — natively
+php -S localhost:8000
 ```
 
 This approach isn't a compromise. It's the proper division of tools according to their nature:
@@ -233,14 +232,6 @@ These are real exceptions. The problem starts when the exception gets proclaimed
 The real PHP problem over the years wasn't: *"we need Docker"*. It was: **for years there was no good, lightweight, and predictable way to manage local PHP runtime and its versions**.
 
 When the ecosystem didn't provide a convenient answer to the question *how to easily install and switch PHP versions between projects*, a shortcut naturally appeared: *"let's throw everything into a container"*. And Docker became for many teams not so much the best solution as a substitute workaround for tooling gaps.
-
-PHM exists to fill that gap. Native PHP runtime on macOS, managed like `apt` on Linux:
-
-```bash
-phm install php8.5-cli php8.5-fpm php8.5-redis
-phm install composer symfony
-phm use 8.5
-```
 
 ## Conclusion
 
