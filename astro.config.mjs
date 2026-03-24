@@ -51,6 +51,7 @@ export default defineConfig({
             { slug: 'packages' },
             { slug: 'how-packages-are-built' },
             { slug: 'phm-vs-alternatives' },
+            { slug: 'why-not-docker' },
             { slug: 'faq' },
           ],
         },
