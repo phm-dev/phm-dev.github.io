@@ -7,11 +7,13 @@ description: Dlaczego uruchamianie PHP w kontenerach Docker do lokalnego develop
 
 W świecie PHP jest pewien odruch, który z czasem urósł do rangi domyślnego standardu:
 
-> Masz uruchomić projekt lokalnie? Wrzuć wszystko do Dockera.
+> masz uruchomić projekt lokalnie? Wrzuć wszystko do Dockera.
 
 PHP, nginx, baza danych, Redis, kolejka, search engine, mailpit — a potem dorzuć jeszcze warstwę zarządzającą (Warden, DDEV, Lando), bo samo `docker compose up` okazuje się niewystarczające.
 
 I właśnie w tym miejscu warto się zatrzymać i zadać jedno pytanie: **czy naprawdę rozwiązujemy problem, czy po prostu przyzwyczailiśmy się do jego obchodzenia?**
+
+---
 
 ## Docker jest świetny. Na swoim miejscu.
 
@@ -36,6 +38,8 @@ To są niezależne procesy ze swoim własnym stanem, wersjami i cyklem życia. T
 
 To narzędzie dewelopera. Interpreter, z którym pracujesz bezpośrednio: uruchamiasz `php`, `composer`, `phpunit`, `phpstan`, `rector`, skrypty CLI, debugger, watchery. I właśnie dlatego wrzucanie go do kontenera lokalnie jest bardzo często architektonicznym nieporozumieniem.
 
+---
+
 ## Co się dzieje, gdy kontener staje się protezą runtime
 
 W większości ekosystemów runtime języka działa natywnie na maszynie dewelopera. Go jest instalowane lokalnie. Node działa lokalnie, z `nvm` albo `volta`. Python działa lokalnie, z `pyenv` i virtualenv. Docker bywa tam używany, ale jako opcja, nie fundament.
@@ -51,6 +55,8 @@ Od tego momentu każde proste działanie zaczyna wymagać pośrednika. Zamiast u
 - dodatkowe punkty, w których coś może pójść nie tak.
 
 Każda warstwa abstrakcji ma cenę. Warstwy nie są darmowe.
+
+---
 
 ## Każda warstwa abstrakcji ma koszt
 
@@ -76,6 +82,8 @@ host OS → Docker Desktop → obraz → kontener → mounty / wolumeny / sieć 
 
 Każda awaria, spowolnienie albo niespójność może wynikać z każdej z tych warstw. Prosty problem przestaje być prosty do zdiagnozowania.
 
+---
+
 ## Twarde dane: wydajność to nie detal
 
 ### File system I/O
@@ -94,7 +102,7 @@ Każdy request w trybie dev = intensywny dostęp do filesystemu. Każda iteracja
 ### Cold start
 
 | Operacja | Czas |
-|----------|------|
+|---|---|
 | `php -S localhost:8000` | ~50ms |
 | `docker compose up` | 3–15s |
 
@@ -103,7 +111,7 @@ To nie jest detal optymalizacyjny. To jest różnica między *flow* a *czekaniem
 ### RAM i bateria
 
 | Runtime | Zużycie RAM |
-|---------|-------------|
+|---|---|
 | Natywne PHP | ~30MB |
 | Docker Desktop + kontenery | 1–2GB |
 
@@ -127,7 +135,7 @@ To nie są edge case'y. To jest codzienność każdego, kto próbuje złapać br
 ### Zestawienie
 
 | Kryterium | Native PHP | Docker | Wygrywa |
-|-----------|-----------|--------|---------|
+|---|---|---|---|
 | Cold start | ~50ms | 3–15s | Native |
 | File I/O (macOS) | 1× | 1.5–5× wolniej | Native |
 | Debugger | trivial | wymaga konfiguracji | Native |
@@ -139,6 +147,8 @@ To nie są edge case'y. To jest codzienność każdego, kto próbuje złapać br
 | CI parity | brak | możliwe | Docker |
 
 Wynik **6:3 dla Native** — w kontekście codziennego environment deweloperskiego.
+
+---
 
 ## „Works on my machine" nie znika. Tylko zmienia formę.
 
@@ -163,6 +173,8 @@ Gdy któryś z tych warunków nie jest spełniony, znika problem *„jaką masz 
 
 To nie jest brak kompetencji. To jest koszt architektoniczny wynikający z dokładania zbędnych warstw pośrednich.
 
+---
+
 ## Wardeny, DDEV, Lando — sygnał, nie rozwiązanie
 
 Narzędzia do zarządzania lokalnym środowiskiem Dockerowym nie wzięły się znikąd. One istnieją, bo sam model *runtime w kontenerze* generuje tyle tarcia, że potrzebna jest kolejna warstwa do jego ukrycia.
@@ -180,6 +192,8 @@ Jeśli do uruchomienia interpretera języka potrzebujesz:
 to nie uprościłeś środowiska deweloperskiego. Ty je skomplikowałeś — a potem dobudowałeś panel sterowania do tej komplikacji.
 
 Warden i podobne narzędzia bywają wygodne. Ale rozwiązują problemy stworzone przez wcześniejszą decyzję architektoniczną, nie przez naturę samego zadania.
+
+---
 
 ## Najbardziej nadużywany argument: parity z produkcją
 
@@ -199,13 +213,15 @@ Prawdziwe parity z produkcją to:
 
 Nie laptop dewelopera. Nikt rozsądny nie oczekuje, że lokalne środowisko będzie kopią klastra produkcyjnego z load balancerami, service meshem i politykami bezpieczeństwa z live.
 
+---
+
 ## Jaki jest właściwy podział?
 
 To nie jest wybór między *Docker a Native*. To jest kwestia właściwego podziału odpowiedzialności.
 
 **Optymalny setup:**
 
-```bash
+```sh
 # Infrastruktura — Docker
 docker compose up -d mysql redis rabbitmq opensearch
 
@@ -218,6 +234,8 @@ Takie podejście nie jest kompromisem. To jest właściwy podział narzędzi wed
 - Docker zarządza procesami ze stanem, wersjami, własnym cyklem życia — usługami,
 - natywny runtime daje bezpośredni, szybki, niezapośredniczony dostęp do interpretera.
 
+---
+
 ## Kiedy Docker dla PHP lokalnie ma sens
 
 Żeby było uczciwie: są sytuacje, w których runtime PHP w kontenerze jest uzasadniony:
@@ -227,11 +245,15 @@ Takie podejście nie jest kompromisem. To jest właściwy podział narzędzi wed
 
 To są prawdziwe wyjątki. Problem zaczyna się wtedy, gdy wyjątek zostaje ogłoszony domyślnym standardem.
 
+---
+
 ## Skąd się wziął ten problem
 
 Prawdziwy problem PHP przez lata nie brzmiał: *„potrzebujemy Dockera"*. Brzmiał: **przez lata brakowało dobrego, lekkiego i przewidywalnego sposobu na zarządzanie lokalnym runtime PHP oraz jego wersjami**.
 
 Gdy ekosystem nie dawał wygodnej odpowiedzi na pytanie *jak łatwo zainstalować i przełączać wersje PHP między projektami*, naturalnie pojawił się skrót: *„to wrzućmy wszystko do kontenera"*. I Docker stał się dla wielu zespołów nie tyle najlepszym rozwiązaniem, co zastępczym obejściem braków toolingowych.
+
+---
 
 ## Wniosek
 
