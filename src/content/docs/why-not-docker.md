@@ -5,13 +5,15 @@ description: Why running PHP in Docker containers for local development is often
 
 ## "Just use Docker, bro"
 
-In the PHP world, there's a reflex that has grown into a default standard:
+In the PHP world, there's a certain reflex that has grown over time into a default standard:
 
-> Need to run a project locally? Throw everything into Docker.
+> need to run a project locally? Throw everything into Docker.
 
-PHP, nginx, database, Redis, queue, search engine, mailpit — and then add another management layer (Warden, DDEV, Lando), because `docker compose up` alone turns out to be insufficient.
+PHP, nginx, database, Redis, queue, search engine, mailpit — and then add yet another management layer (Warden, DDEV, Lando), because `docker compose up` alone turns out to be insufficient.
 
-This is where it's worth stopping and asking one question: **are we actually solving the problem, or have we just gotten used to working around it?**
+And this is exactly where it's worth stopping and asking one question: **are we actually solving the problem, or have we just gotten used to working around it?**
+
+---
 
 ## Docker is great. In its place.
 
@@ -36,13 +38,15 @@ These are independent processes with their own state, versions, and lifecycle. K
 
 It's a developer tool. An interpreter you work with directly: you run `php`, `composer`, `phpunit`, `phpstan`, `rector`, CLI scripts, debugger, watchers. And that's exactly why putting it in a container locally is very often an architectural misunderstanding.
 
+---
+
 ## What happens when a container becomes a runtime prosthesis
 
-In most ecosystems, the language runtime runs natively on the developer machine. Go is installed locally. Node runs locally, with `nvm` or `volta`. Python runs locally, with `pyenv` and virtualenv. Docker is sometimes used there, but as an option, not a foundation.
+In most ecosystems, the language runtime runs natively on the developer's machine. Go is installed locally. Node runs locally, with `nvm` or `volta`. Python runs locally, with `pyenv` and virtualenv. Docker is sometimes used there, but as an option, not a foundation.
 
-In PHP, things went differently over the years. Instead of organizing the way runtime is installed and versions are switched, many environments went toward: *"let's put PHP in a container, the problem will disappear"*. But the problem didn't disappear — it just moved down a layer.
+In PHP, things went differently over the years. Instead of organizing the way runtime is installed and versions are switched, many environments went toward: *"let's put PHP in a container, the problem will disappear"*. Except the problem didn't disappear — it just moved down a layer.
 
-From that point, every simple action starts requiring a middleman. Instead of running commands directly, you work through a container — which means:
+From that point on, every simple action starts requiring a middleman. Instead of running commands directly, you work through a container — which means:
 
 - an additional I/O layer,
 - an additional network layer,
@@ -50,7 +54,9 @@ From that point, every simple action starts requiring a middleman. Instead of ru
 - an additional debugging layer,
 - additional points where something can go wrong.
 
-Every abstraction layer has a cost. Layers are not free.
+Every abstraction layer has a price. Layers are not free.
+
+---
 
 ## Every abstraction layer has a cost
 
@@ -76,11 +82,13 @@ host OS → Docker Desktop → image → container → mounts / volumes / networ
 
 Any failure, slowdown, or inconsistency can stem from any of these layers. A simple problem stops being simple to diagnose.
 
+---
+
 ## Hard data: performance is not a detail
 
 ### File system I/O
 
-On macOS, Docker (even with VirtioFS) is **1.5x – 5x slower** than native file access.
+On macOS, Docker (even with VirtioFS) is **1.5× – 5× slower** than native file access.
 
 For PHP frameworks, this has real implications:
 
@@ -94,16 +102,16 @@ Every request in dev mode = intensive filesystem access. Every test iteration = 
 ### Cold start
 
 | Operation | Time |
-|-----------|------|
+|---|---|
 | `php -S localhost:8000` | ~50ms |
 | `docker compose up` | 3–15s |
 
-This isn't an optimization detail. It's the difference between *flow* and *waiting*.
+This is not an optimization detail. It's the difference between *flow* and *waiting*.
 
 ### RAM and battery
 
 | Runtime | RAM usage |
-|---------|-----------|
+|---|---|
 | Native PHP | ~30MB |
 | Docker Desktop + containers | 1–2GB |
 
@@ -122,14 +130,14 @@ Xdebug → localhost:9003 → works
 - path mapping (host ↔ container),
 - discrepancies between file paths in IDE and container.
 
-These aren't edge cases. This is the daily reality of anyone trying to hit a breakpoint from an IDE.
+These are not edge cases. This is the daily reality of anyone trying to hit a breakpoint from an IDE.
 
 ### Comparison
 
 | Criterion | Native PHP | Docker | Winner |
-|-----------|-----------|--------|--------|
+|---|---|---|---|
 | Cold start | ~50ms | 3–15s | Native |
-| File I/O (macOS) | 1x | 1.5–5x slower | Native |
+| File I/O (macOS) | 1× | 1.5–5× slower | Native |
 | Debugger | trivial | requires configuration | Native |
 | RAM | ~30MB | 1–2GB | Native |
 | Disk | ~50MB | 500MB–2GB | Native |
@@ -138,7 +146,9 @@ These aren't edge cases. This is the daily reality of anyone trying to hit a bre
 | Infra (DB, Redis) | harder | easy | Docker |
 | CI parity | none | possible | Docker |
 
-**Score 6:3 for Native** — in the context of everyday developer environment.
+Score **6:3 for Native** — in the context of everyday developer environment.
+
+---
 
 ## "Works on my machine" doesn't disappear. It just changes form.
 
@@ -161,7 +171,9 @@ When any of these conditions isn't met, the problem *"which PHP version do you h
 - *why does `composer install` in the container give different results than locally?*
 - *why do you need to clear cache or rebuild the image after restart?*
 
-This isn't a lack of competence. It's the architectural cost of adding unnecessary intermediate layers.
+This is not a lack of competence. It's the architectural cost of adding unnecessary intermediate layers.
+
+---
 
 ## Warden, DDEV, Lando — a signal, not a solution
 
@@ -181,6 +193,8 @@ then you haven't simplified the developer environment. You've complicated it —
 
 Warden and similar tools can be convenient. But they solve problems created by a previous architectural decision, not by the nature of the task itself.
 
+---
+
 ## The most overused argument: production parity
 
 *"But we use Docker in production"* — this is one of the most common counterarguments. And one of the most overused.
@@ -199,13 +213,15 @@ Real production parity comes from:
 
 Not a developer's laptop. Nobody reasonable expects the local environment to be a copy of a production cluster with load balancers, service mesh, and security policies from live.
 
+---
+
 ## What's the right split?
 
-This isn't a choice between *Docker and Native*. It's about the proper separation of responsibilities.
+This is not a choice between *Docker and Native*. It's about the proper separation of responsibilities.
 
 **Optimal setup:**
 
-```bash
+```sh
 # Infrastructure — Docker
 docker compose up -d mysql redis rabbitmq opensearch
 
@@ -213,10 +229,12 @@ docker compose up -d mysql redis rabbitmq opensearch
 php -S localhost:8000
 ```
 
-This approach isn't a compromise. It's the proper division of tools according to their nature:
+This approach is not a compromise. It's the proper division of tools according to their nature:
 
 - Docker manages processes with state, versions, their own lifecycle — services,
 - native runtime gives direct, fast, unmediated access to the interpreter.
+
+---
 
 ## When Docker for local PHP actually makes sense
 
@@ -227,11 +245,15 @@ To be fair: there are situations where PHP runtime in a container is justified:
 
 These are real exceptions. The problem starts when the exception gets proclaimed the default standard.
 
+---
+
 ## Where the problem came from
 
 The real PHP problem over the years wasn't: *"we need Docker"*. It was: **for years there was no good, lightweight, and predictable way to manage local PHP runtime and its versions**.
 
 When the ecosystem didn't provide a convenient answer to the question *how to easily install and switch PHP versions between projects*, a shortcut naturally appeared: *"let's throw everything into a container"*. And Docker became for many teams not so much the best solution as a substitute workaround for tooling gaps.
+
+---
 
 ## Conclusion
 
@@ -241,4 +263,4 @@ Running PHP locally in a container is sometimes justified, but in many projects 
 
 If you containerize the database, queue, and cache — that's sensible. If you containerize the interpreter only because that's how it's been done, and then you need more tools to tame that decision — it's worth asking whether you confused the solution with the workaround.
 
-A good developer environment isn't one with the most layers. It's one with **the least friction at the greatest predictability**.
+A good developer environment is not one with the most layers. It's one with **the least friction at the greatest predictability**.
